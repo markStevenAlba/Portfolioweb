@@ -1,5 +1,5 @@
 .contact__container {
-  grid-template-columns: repeat(2, max-content);
+  grid-template-columns: repeat(3 );
   justify-content: center;
   column-gap: 6rem;
   padding-bottom: 3rem;
@@ -20,6 +20,41 @@
 
 .contact__card {
   background-color: var(--container-color);
-  border: 1px solid;
+  border: 1px solid rgba(0, 0, 0,0.1);
+  padding: 1rem;
+  border-radius: 0.75rem;
+  text-align: left;
 }
- 
+
+.contact__card-icon {
+  font-size: 2rem;
+  margin-bottom: var(--mb-0-25);
+}
+
+/* .contact__card-title,
+.contact__card-data {
+  font-size: var(--small-font-size);
+}
+
+.contact__card-title {
+  font-weight:var(--h3-font-size);
+}
+
+.contact__card-data {
+  display: block;
+  margin-bottom: var(--mb-0-75);
+}
+
+.contact__button {
+  color: var(--text-color);
+  font-size: var(--small-font-size);
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.25rem;
+}
+.contact__form {
+  width: 360px;
+}
+
+
+  */

@@ -49,7 +49,7 @@ const Contact = () => {
 
         <div className="contact__content">
           <h3 className="contact__title">Write me your project</h3>
-
+{/* 
           <form className="contact__form">
             <div className="contact__form-div">
               <label className="contact__form-tag">Name</label>
@@ -126,7 +126,7 @@ const Contact = () => {
                     fill="#EBA352"
                   ></path>
 </svg>
-          </form>
+          </form> */}
         </div>
       </div>
     </section>
