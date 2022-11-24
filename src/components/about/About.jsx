@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import "./about.css";
 import AboutImg from "../../assets/about.jpg";
 import CV from "../../assets/John-Cv.pdf";
@@ -26,7 +26,7 @@ const About = () => {
            <a download="" href={CV} className="button
            button--flex">Download CV
            <svg
-                class="button__icon"
+                className="button__icon"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -54,7 +54,7 @@ const About = () => {
        </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default About
+export default About;
