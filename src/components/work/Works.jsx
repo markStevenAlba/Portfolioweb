@@ -13,7 +13,7 @@ const Works = () => {
             setProjects(projectsData);
         } else {
           const newProjects = projectsData.filter((project) => {
-                return project.category.toLowerCase === item.name;
+                return project.category.toLowerCase() === item.name;
             });
             setProjects(newProjects);
         }
