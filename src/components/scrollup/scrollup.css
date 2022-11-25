@@ -1,7 +1,8 @@
 .scrollup {
   position: fixed;
   right: 2.5rem;
-  bottom: 20%;
+  bottom: 3rem;
+  /* bottom: -20%; */
   background-color: var(--title-color);
   opacity: 0.8;
   padding: 0.3rem 0.5rem;
@@ -22,4 +23,30 @@
 /* SHOW SCROLL */
 .show-scroll {
   bottom: 3rem;
+}
+
+/* FOR LARGE DEVICES  */
+@media screen and (max-width: 992px) {
+  .scrollup {
+    right: 1.5rem;
+    padding: 0.25rem;
+  }
+  
+  .scrollup__icon {
+    font-size: 1.25rem;
+  }
+}
+
+/* FOR MEDIUM DEVICES  */
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 576px) {
+
+}
+
+/* FOR SMALL DEVICES  */
+@media screen and (max-width: 350px) {
+
 }
