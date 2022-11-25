@@ -8,31 +8,31 @@ export const projectsData = [
     {
       id: 1,
       image: Work1,
-      title: "Web design",
+      title: "Web Design",
       category: "Web",
     },
     {
       id: 2,
       image: Work2,
-      title: "App movie",
+      title: "App Movie",
       category: "App",
     },
     {
       id: 3,
       image: Work3,
-      title: "Brand design",
+      title: "Brand Design",
       category: "Design",
     },
     {
       id: 4,
       image: Work4,
-      title: "App movil",
+      title: "App Movies",
       category: "App",
     },
     {
       id: 5,
       image: Work5,
-      title: "Web design",
+      title: "Web Design",
       category: "Web",
     },
 ];
