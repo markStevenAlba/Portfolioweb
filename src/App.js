@@ -10,6 +10,7 @@ import Testimonials from './components/testimonials/Testimonials';
 import Contact from './components/contact/Contact';
 import Work from './components/work/Work';
 import Footer from './components/footer/Footer';
+import ScrollUp from './components/scrollup/ScrollUp';
 
 const App = () => {
   return (
@@ -25,8 +26,9 @@ const App = () => {
       <Work />
       <Testimonials/>
       <Contact/>
-      <Footer />
     </main>
+      <Footer />
+      <ScrollUp />
     </>
   )
 }
