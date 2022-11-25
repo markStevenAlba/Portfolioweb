@@ -62,8 +62,8 @@
 }
 
 .services__modal-content {
-  width: 500px;
-  position: relative;
+  width: 1000px;
+  /* position: relative; */
   background-color: var(--container-color);
   padding: 4.5rem 2.5rem 2.5rem;
   border-radius: 1.5rem;
@@ -72,8 +72,7 @@
 .services__modal-close {
   position: absolute;
   top: 1.5rem;
-  right: 1.5rem;
-  font-size: var(--title-color);
+  color: var(--title-color);
   cursor: pointer;
 }
 
@@ -90,11 +89,11 @@
 
 .services__modal-description {
   font-size: var(--small-font-size);
-  padding: 0.35rem;
+  padding: 0 3.5rem;
   margin-bottom: var(--mb-2);
 }
 
-.services__modal-service {
+.services__modal-services {
   row-gap: 0.75rem;
 }
 
@@ -117,4 +116,48 @@
 .active-modal {
   opacity: 1;
   visibility: visible;
+}
+
+/*============ BREAKPOINTS ======== */
+/* Large Devices */
+@media screen and (max-width: 992px) {
+  .services__container {
+    grid-template-columns: repeat(3, 218px);
+  }
+}
+
+/* Medium Devices */
+@media screen and (max-width: 768px) {
+  .services__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services__content {
+    padding: 3.5rem 0.5rem 1.25rem 1.5rem;
+  }
+
+  .services__icon {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .services__modal-content {
+    padding: 4.5rem 1.5rem 2.5rem;
+  }
+
+  .services__modal-description {
+    padding: 0;
+  }
+}
+
+/*Small Devices */
+@media screen and (max-width: 350px) {
+  .services__container {
+    grid-template-columns: max-content;
+  }
+
+  .services__content {
+    padding-right: 6rem;
+  }
 }
