@@ -36,7 +36,6 @@ const Works = () => {
                         }}
                         className={`${active === index ? 'active-work' : ''} work__item`}
                         key={index}
-                        // className="work__item" key={index}>
                         >
                         {item.name}
                     </span>
