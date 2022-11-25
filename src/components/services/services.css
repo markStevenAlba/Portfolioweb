@@ -5,7 +5,6 @@
 }
 
 .services__content {
-  height: 300px;
   position: relative;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--container-color);
@@ -31,7 +30,7 @@
   font-size: var(--small-font-size);
   display: inline-flex;
   align-items: center;
-  column-gap: 0.25;
+  column-gap: 0.25rem;
   cursor: pointer;
 }
 
@@ -40,7 +39,8 @@
   transition: 0.3s;
 }
 
-.services__button:hover .services__button-icon {
+.services__button:hover 
+.services__button-icon {
   transform: translateX(00.25rem);
 }
 
@@ -52,14 +52,35 @@
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: var(--z-modal);
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   padding: 0 1rem;
   opacity: 0;
-  visibility: visible;
+  visibility: hidden;
   transition: .3s;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .services__modal-content {
   width: 500px;
