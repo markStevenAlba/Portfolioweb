@@ -9,20 +9,23 @@ import Qualification from './components/qualification/Qualification';
 import Testimonials from './components/testimonials/Testimonials';
 import Contact from './components/contact/Contact';
 import Work from './components/work/Work';
+import Footer from './components/footer/Footer';
+
 const App = () => {
   return (
     <>
     <Header />
 
     <main className="main">
-    <Home/>
-    <About/>
-    <Skills/>
-    <Services/>
-    <Qualification/>
-    <Work />
-    <Testimonials/>
-    <Contact/>
+      <Home/>
+      <About/>
+      <Skills/>
+      <Services/>
+      <Qualification/>
+      <Work />
+      <Testimonials/>
+      <Contact/>
+      <Footer />
     </main>
     </>
   )
