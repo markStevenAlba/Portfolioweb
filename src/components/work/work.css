@@ -47,7 +47,7 @@
 
 .work__button {
     color: var(--text-color);
-    font-size: var(--small -font-size);
+    font-size: var(--small-font-size);
     display: flex;
     align-items: center;
     column-gap: 0.25rem;
@@ -60,7 +60,7 @@
 
 .work__button:hover .work__button-icon {
     transform: translateX(0.25rem);
-    background-color: var(--title-color);
+    /* background-color: var(--title-color); */
 }
 
 
