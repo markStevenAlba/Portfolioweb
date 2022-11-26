@@ -6,6 +6,11 @@ import Data from './Component/Data';
 import PrivateRoute from './Component/PrivateRoute';
 import { Provider } from "react-redux";
 import store from './Redux/store';
+
+import Login from './components/form/Login';
+import Register from './components/form/Register';
+
+
 function App() {
   return (
     <Provider store={store}>
@@ -27,10 +32,11 @@ function App() {
 
   {/* <PrivateRoute path="/" component={Layout} /> */}
 
-  {/* <PublicRoute path="/login" component={Login} /> */}
-  {/* <PublicRoute path="/signup" component={Signup} /> */}
   {/* <PrivateRoute path="/admin" component={AdminLayout} /> */}
   {/* <PrivateRoute path="/admin" component={TestLayout} /> */}
+  {/* <PrivateRoute path="/login" component={Login} /> */}
+  {/* <PrivateRoute path="/register" component={Register} /> */}
+  
   <Route 
     exact
   path="/" render={() => <Redirect to="/profile" />} />
