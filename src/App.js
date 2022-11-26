@@ -32,10 +32,8 @@ function App() {
 
   {/* <PrivateRoute path="/" component={Layout} /> */}
 
-  {/* <PrivateRoute path="/admin" component={AdminLayout} /> */}
-  {/* <PrivateRoute path="/admin" component={TestLayout} /> */}
-  {/* <PrivateRoute path="/login" component={Login} /> */}
-  {/* <PrivateRoute path="/register" component={Register} /> */}
+  <PrivateRoute path="/login" component={Login} />
+  <PrivateRoute path="/register" component={Register} />
   
   <Route 
     exact
