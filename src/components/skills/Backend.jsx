@@ -41,10 +41,10 @@ const Backend = () => {
         
         <div className="skills__group">
           <div className="skills__data">
-            <i className="bx bxl-mysql"></i>
+            <i className="bx bxl-postgresql"></i>
           
             <div>
-                <h3 className="skills__name">MySQL</h3>
+                <h3 className="skills__name">PostgreSql</h3>
                 <span className="skills__level">Intermediate</span>
             </div>
           </div>
