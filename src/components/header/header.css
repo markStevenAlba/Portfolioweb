@@ -44,7 +44,7 @@
 /* Active link */
 .active-link,
 .nav__link:hover {
-  background-color: wheat;
+  /* background-color: wheat; */
   border-color: 1px solid black;
 }
 
