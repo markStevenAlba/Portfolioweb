@@ -12,13 +12,13 @@ export const projectsData = [
       category: "Web",
       link: "/pos"
     },
-    // {
-    //   id: 2,
-    //   image: Work2,
-    //   title: "Meet",
-    //   category: "App",
-    //   link: "/meet"
-    // },
+    {
+      id: 2,
+      image: Work2,
+      title: "Meet",
+      category: "App",
+      link: "/meet"
+    },
     // {
     //   id: 3,
     //   image: Work3,

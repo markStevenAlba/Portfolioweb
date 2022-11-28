@@ -1,18 +1,19 @@
 import axios from 'axios';
-export const dataAction = {
-    getData,
-};
+import { API_URL } from '../../commonData';
+
+
+
 function getData() {
     return dispatch => {
 
-        dispatch(request());
-        axios.get('https://jsonplaceholder.typicode.com/posts')
+      return axios.get('https://jsonplaceholder.typicode.com/posts')
             .then(response => {
                     if(response.status === 200) {
                         dispatch(success(response.data));
                     }
                     dispatch(failure(response));
                     console.log(response);
+                    return response
                 }
             ).catch(error => {
             dispatch(failure(error));
@@ -23,3 +24,9 @@ function getData() {
     function failure(error) { return { type: 'ERROR_DATA', error }}
 }
 
+
+
+
+export const dataAction = {
+    getData,
+};

@@ -1,7 +1,7 @@
 {
   "name": "portfoliosite",
   "version": "0.1.0",
-  "homepage": "http://bugtech.ddns.net",
+  "homepage": "/meet",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.10.0",

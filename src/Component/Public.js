@@ -15,7 +15,7 @@ import ScrollUp from '../components/scrollup/ScrollUp';
 const App = () => {
   return (
     <>
-    <Header />
+    {/* <Header /> */}
     <main className="main">
       <Home/>
       <About/>
@@ -26,8 +26,8 @@ const App = () => {
       <Testimonials/>
       <Contact/>
     </main>
-      <Footer />
-      <ScrollUp />
+      {/* <Footer /> */}
+      {/* <ScrollUp /> */}
     </>
   )
 }
