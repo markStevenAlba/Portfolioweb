@@ -9,7 +9,7 @@ import store from './Redux/store';
 function App() {
   return (
     <Provider store={store}>
-      <div className="App">
+      {/* <div className="App"> */}
         {/* <h1>REACT-REDUX BOILERPLATE WITH THUNK MIDDLEWARE</h1> */}
         <Router>
         {/* <div>
@@ -45,7 +45,7 @@ function App() {
 </Switch>
         {/* </div> */}
       </Router>
-      </div>
+      {/* </div> */}
     </Provider>
   );
 

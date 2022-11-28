@@ -12,34 +12,34 @@ export const projectsData = [
       category: "Web",
       link: "/pos"
     },
-    {
-      id: 2,
-      image: Work2,
-      title: "Meet",
-      category: "App",
-      link: "/meet"
-    },
-    {
-      id: 3,
-      image: Work3,
-      title: "Brand Design",
-      category: "Design",
-      link: "/netflix"
-    },
-    {
-      id: 4,
-      image: Work4,
-      title: "App Movies",
-      category: "App",
-      link: "/blog"
-    },
-    {
-      id: 5,
-      image: Work5,
-      title: "Web Design",
-      category: "Web",
-      link: "/inventory"
-    },
+    // {
+    //   id: 2,
+    //   image: Work2,
+    //   title: "Meet",
+    //   category: "App",
+    //   link: "/meet"
+    // },
+    // {
+    //   id: 3,
+    //   image: Work3,
+    //   title: "Brand Design",
+    //   category: "Design",
+    //   link: "/netflix"
+    // },
+    // {
+    //   id: 4,
+    //   image: Work4,
+    //   title: "App Movies",
+    //   category: "App",
+    //   link: "/blog"
+    // },
+    // {
+    //   id: 5,
+    //   image: Work5,
+    //   title: "Web Design",
+    //   category: "Web",
+    //   link: "/inventory"
+    // },
 ];
 
 export const projectsNav = [
