@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import "./header.css";
 
-const Header = () => {
+const Header = ({data}) => {
   const { isAuth} = useSelector(a => a.auth);
+  const { profile } = data;
   /*============ Toggle  Menu======== */
   const [Toggle, showMenu] = useState(false);
   const [activeNav, setActiveNav] = useState("#home");
@@ -13,16 +14,19 @@ const Header = () => {
     window.location.href = "/";
   }
 
+
+  console.log(profile)
+
   return (
  <header className="header">
   <nav className="nav container">
-   {isAuth ?  <div  className="nav__logo"
+   {isAuth && profile ?  <div  className="nav__logo"
     onClick={() => handleLogout()}
    >
-      Mel
+      {String(profile.nickname).toUpperCase()}
       </div> : 
        <a href="/" className="nav__logo">
-       Mel
+      {String(profile && profile.nickname ? profile.nickname : 'Bugtech').toUpperCase()}
        </a>
       }
 
@@ -32,7 +36,8 @@ const Header = () => {
           <li className= "nav__item">
           <a href="#home" onClick={() => setActiveNav('#home')} className={activeNav === "#home" ? 
             "nav__link active-link" : "nav__link"}>
-          <i className="uil uil-estate nav__icon"></i>Home
+          {/* <i className="uil uil-estate nav__icon"></i> */}
+          Home
           </a>
         </li>
 
@@ -43,7 +48,8 @@ const Header = () => {
             className={activeNav === "#about" ? 
             "nav__link active-link" : "nav__link"}
           >
-          <i className="uil uil-estate nav__icon"></i>About
+          {/* <i className="uil uil-estate nav__icon"></i> */}
+          About
           </a>
         </li>
 
@@ -54,7 +60,8 @@ const Header = () => {
             className={activeNav === "#skills" ? 
             "nav__link active-link" : "nav__link"}
           >
-          <i className="uil uil-estate nav__icon"></i>Skills
+          {/* <i className="uil uil-estate nav__icon"></i> */}
+          Skills
           </a>
         </li>
 
@@ -65,7 +72,8 @@ const Header = () => {
             className={activeNav === "#services" ? 
             "nav__link active-link" : "nav__link"}
           >
-          <i className="uil uil-estate nav__icon"></i>Services
+          {/* <i className="uil uil-estate nav__icon"></i> */}
+          Services
           </a>
         </li>
 
@@ -76,7 +84,8 @@ const Header = () => {
             className={activeNav === "#portfolio" ? 
             "nav__link active-link" : "nav__link"}
           >
-          <i className="uil uil-estate nav__icon"></i>Portfolio
+          {/* <i className="uil uil-estate nav__icon"></i> */}
+          Portfolio
           </a>
         </li>
 
@@ -87,7 +96,8 @@ const Header = () => {
             className={activeNav === "#contact" ? 
             "nav__link active-link" : "nav__link"}
           >
-          <i className="uil uil-estate nav__icon"></i>Contact
+          {/* <i className="uil uil-estate nav__icon"></i> */}
+          Contact
           </a>
         </li>
       </ul>

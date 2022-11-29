@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import "./App.css";
 import Header from '../components/header/Header';
 import Home from '../components/home/Home';
@@ -12,17 +12,34 @@ import Work from '../components/work/Work';
 import Footer from '../components/footer/Footer';
 import ScrollUp from '../components/scrollup/ScrollUp';
 import { useSelector } from 'react-redux';
+import { PROFILES } from '../commonData';
+
 
 const App = () => {
   const { isAuth } = useSelector(a => a.auth);
+  const [values, setValues] = useState({})
 
+
+  useEffect(() => {
+
+   
+    let profile = PROFILES.find(a => a.username === 'jaybeegeli');
+
+    setValues(profile)
+
+    
+  }, [])
+
+
+
+  console.log(values)
 
   return (
     <>
   
-    <Header />
+    <Header data={values} />
     <main className="main">
-      <Home/>
+      <Home data={values}/>
       <About/>
       <Skills/>
       <Services/>

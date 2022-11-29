@@ -2,11 +2,15 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 import ProfileForm from '../../Component/Forms/ProfileForm'
 
-const Data = () => {
+const Data = ({data = {}}) => {
   const { isAuth} = useSelector(a => a.auth)
+  
+  console.log(data)
+  
+  
   return (
   <div className="home__data">
-<h2 className="home__title"> John Benedict Geli
+<h2 className="home__title"> {data.firstName} {data.lastName} 
 { !isAuth ? <svg
                   width="36"
                   height="36"
@@ -58,10 +62,8 @@ const Data = () => {
 </svg> : <>&nbsp;&nbsp;<ProfileForm/></>
 }
 </h2>
-<h3 className="home__subtitle">Software Engineer</h3>
-<p className= "home__description">I'm creative designer based 
-in New York, and I'm very passionate and dedicated to my 
-work.</p>
+<h3 className="home__subtitle">{data.position}</h3>
+<p className= "home__description">{data.bio}</p>
 
 <a href="#contact" className="button button--flex">
   Say Hello
