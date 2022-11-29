@@ -1,14 +1,21 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 // import emailjs from `@emailjs/browser`;
 import { sendEmail } from '../../Redux/Actions/dataAction.js';
+
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/pagination";
+
+import { Pagination } from "swiper";
 
 import "./contact.css";
 import { useDispatch } from 'react-redux';
 
-const Contact = () => {
+const Contact = ({data}) => {
 
   const dispatch = useDispatch();
-
+  const [contacts, setContacts] = useState([]);
   const [values, setValues] = useState({});
   const form = useRef(); 
 
@@ -24,6 +31,20 @@ const Contact = () => {
     e.target.reset()
   };
 
+  useEffect(() => {
+    let { contents } = data;
+
+    let contactMe = [];
+
+    if(contents && contents.length !== 0){ 
+    contactMe = contents.find(a => a.type === 'contact');
+    }
+  
+      setContacts(contactMe.contents);
+
+  }, [data])
+
+  console.log(contacts)
   return (
     <section className="contact section" id="contact">
       <h2 className="section__title">Get in touch</h2>
@@ -32,8 +53,69 @@ const Contact = () => {
       <div className="contact__container container grid">
         <div className="contact__content">
           <h3 className="contact__title">Talk To Me</h3>
-          
           <div className="contact__info">
+          <Swiper 
+           direction={"vertical"}
+          loop={true}
+          grabCursor={true}
+          spaceBetween={0}
+          pagintaion={{
+            clickable: true,
+          }}
+          slidesPerView={3}
+          // breakpoints={{
+          //   768: {
+          //     slidesPerView: 3,
+          //     spaceBetween: 0
+
+          //   },
+          //   576: {
+          //     slidesPerView: 3
+          //   }
+          // }}
+          modules={[Pagination]}
+        >
+          {contacts &&  contacts.map((a, index) => {
+            return (
+              <SwiperSlide key={index}>
+                      <div className="contact__card">
+                            <i className={`${a.icon} contact__card-icon`}></i>
+                     <h3 className="contact__card-title">{a.title}</h3>
+                     <span className="contact__card-data">{a.subtitle}</span>
+                     
+                     <a href={a.link}
+                      // target="_blank"
+                       className="contact__button">
+                       Write Me{" "}
+                         <i className="bx bx-right-arrow-alt
+                           contact__button-icon"
+                         ></i>
+                     </a>
+                     </div>
+             </SwiperSlide>
+            )
+          })}
+     
+      {/* <SwiperSlide className="contact__card" >
+      <div className="contact__card">
+              <i className="bx bx-mail-send contact__card-icon"></i>
+              
+              <h3 className="contact__card-title">Email</h3>
+              <span className="contact__card-data">jeze21kiel@pm.me</span>
+              
+              <a href="mailto:jezedevkiel21@gmail.com" className="contact__button">
+                Write Me{" "}
+                  <i className="bx bx-right-arrow-alt
+                    contact__button-icon"
+                  ></i>
+              </a>
+            </div>
+        </SwiperSlide> */}
+        </Swiper>
+
+        </div>
+
+          {/* <div className="contact__info">
             <div className="contact__card">
               <i className="bx bx-mail-send contact__card-icon"></i>
               
@@ -75,7 +157,7 @@ const Contact = () => {
                   ></i>
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
         
         <div className="contact__content">

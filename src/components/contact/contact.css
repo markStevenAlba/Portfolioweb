@@ -15,6 +15,13 @@
 .contact__info {
   display: grid;
   row-gap: 1rem;
+  height: 500px;
+  /* grid-template-columns: 300px; */
+}
+
+.contact__info_container {
+  display: grid;
+  row-gap: 1rem;
   grid-template-columns: 300px;
 }
 
@@ -24,6 +31,7 @@
   padding: 1rem;
   border-radius: 0.75rem;
   text-align: center;
+  /* height: 100px; */
 }
 
 .contact__card-icon {

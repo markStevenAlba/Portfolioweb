@@ -40,13 +40,13 @@ const App = () => {
     <Header data={values} />
     <main className="main">
       <Home data={values}/>
-      <About/>
+      <About data={values}/>
       <Skills/>
       <Services/>
       <Qualification/>
       <Work />
       <Testimonials/>
-      <Contact/>
+      <Contact data={values} />
     </main>
       <Footer />
       <ScrollUp />

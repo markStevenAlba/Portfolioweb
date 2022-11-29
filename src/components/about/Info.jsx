@@ -1,16 +1,40 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
-const Info = () => {
+const Info = ({data}) => {
+  const [values, setValues] = useState([]);
+
+
+
+
+  useEffect(() => {
+    if(data && data.length !== 0){
+      setValues(data);
+    } 
+
+  }, [data])
+
   return (
     <div className="about__info grid">
-      <div className="about__box">
-        <i class="bx bx-award about__icon"></i>
+          {values.map((a, index) => {
+            return (
+              <div className="about__box">
+              <i class={`${a.icon} about__icon`}></i>
+      
+              <h3 className="about__title">{a.title}</h3>
+              <span className="about__subtitle">{a.subtitle}</span>
+            </div>
+            )
+          })
+          
 
-        <h3 className="about__title">Experience</h3>
-        <span className="about__subtitle">8 Years Working</span>
-      </div>
+          }
 
-      <div className="about__box">
+
+
+
+     
+
+      {/* <div className="about__box">
         <i class="bx bx-briefcase-alt" about__icon></i>
 
         <h3 className="about__title">Completed</h3>
@@ -22,7 +46,7 @@ const Info = () => {
         
         <h3 className="about__title">Support</h3>
         <span className="about__subtitle">Online 24/7</span>
-      </div>
+      </div> */}
     </div>
   )
 }
