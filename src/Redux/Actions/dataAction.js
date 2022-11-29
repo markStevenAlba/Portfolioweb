@@ -3,11 +3,14 @@ import { API_URL } from '../../commonData';
 
 
 
-function getData() {
-    return dispatch => {
+export function sendEmail  (data) {
+    console.log(data)
 
-      return axios.get('https://jsonplaceholder.typicode.com/posts')
+    return dispatch => {
+        console.log(data)
+      return axios.post(`${API_URL}/auth/email`, data)
             .then(response => {
+                console.log(response)
                     if(response.status === 200) {
                         dispatch(success(response.data));
                     }
@@ -16,6 +19,7 @@ function getData() {
                     return response
                 }
             ).catch(error => {
+                console.log(error)
             dispatch(failure(error));
         });
     };
@@ -23,10 +27,3 @@ function getData() {
     function success(data) { return { type: 'RECEIVE_DATA', payload : data }}
     function failure(error) { return { type: 'ERROR_DATA', error }}
 }
-
-
-
-
-export const dataAction = {
-    getData,
-};

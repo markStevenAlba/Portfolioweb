@@ -1,3 +1,9 @@
+.edit {
+  cursor: pointer;
+}
+
+
+
 .home__container {
   row-gap: 7rem;
 }

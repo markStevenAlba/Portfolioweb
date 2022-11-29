@@ -1,12 +1,36 @@
-import { BrowserRouter as Router, Route, Link, Switch, Redirect } from "react-router-dom";
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
 import './App.css';
 import Public from './Component/Public';
-import Private from './Component/Private';
-import Data from './Component/Data';
+import { Provider, useSelector } from "react-redux";
+import Login from './Component/Login/Login';
 import PrivateRoute from './Component/PrivateRoute';
-import { Provider } from "react-redux";
+import jwtDecode from 'jwt-decode';
+
 import store from './Redux/store';
+
+import {logout, getUserData} from "./Redux/Actions/authAction";
+
+
+const token = localStorage.idToken;
+
+if (token) {
+  const decodedToken = jwtDecode(token);
+  if (decodedToken.exp * 1000 < Date.now()) {
+    store.dispatch(logout());
+    window.location.href = "/";
+  } else {
+    store.dispatch(getUserData());
+  }
+}
+
+
+
 function App() {
+  // const { isAuth } = useSelector(a => a.auth);
+
+
+
   return (
     <Provider store={store}>
       <div className="App">
@@ -31,22 +55,40 @@ function App() {
   {/* <PublicRoute path="/signup" component={Signup} /> */}
   {/* <PrivateRoute path="/admin" component={AdminLayout} /> */}
   {/* <PrivateRoute path="/admin" component={TestLayout} /> */}
-  <Route 
+
+  {/* <PrivateRoute
     exact
-  path="/" render={() => <Redirect to="/profile" />} />
+    path="/"
+    component={Public}
+  />   */}
+    
+  <PrivateRoute
+    path="/login"
+    component={Login}
+  />  
+
+     <Route
+    exact
+    path="/"
+    render={() => <Redirect to="/profile" />}
+  /> 
+
+  
 
   <Route
+    // exact
     path="/profile"
     component={Public}
   />  
 
+ 
   
   <Route component={Error} />
 </Switch>
         {/* </div> */}
       </Router>
       </div>
-    </Provider>
+      </Provider>
   );
 
   // function PrivateRoute({ component, ...rest }) {
@@ -54,7 +96,7 @@ function App() {
   //     <Route
   //       {...rest}
   //       render={props =>
-  //         isLoggedIn ? (
+  //         isAuth ? (
   //           React.createElement(component, props)
   //         ) : (
   //           <Redirect
@@ -65,29 +107,6 @@ function App() {
   //               },
   //             }}
   //           />
-  //         )
-  //       }
-  //     />
-  //   );
-  // }
-
-
-  // function PublicRoute({ component, ...rest }) {
-  //   return (
-  //     <Route
-  //       {...rest}
-  //       render={props =>
-  //         isLoggedIn ? (
-  //           <Redirect
-  //           to={{
-  //             pathname: "/admin",
-  //             state: {
-  //               from: props.location,
-  //             },
-  //           }}
-  //         />
-  //         ) : (
-  //           React.createElement(component, props)
   //         )
   //       }
   //     />

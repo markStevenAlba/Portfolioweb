@@ -1,17 +1,26 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 // import emailjs from `@emailjs/browser`;
-import emailjs from '@emailjs/browser';
+import { sendEmail } from '../../Redux/Actions/dataAction.js';
 
 import "./contact.css";
+import { useDispatch } from 'react-redux';
 
 const Contact = () => {
-  const form = useRef();
+
+  const dispatch = useDispatch();
+
+  const [values, setValues] = useState({});
+  const form = useRef(); 
+
+  const handleChanges = prop => event => {
+    setValues({...values, [prop]: event.target.value})
+  }
   
-  const sendEmail = (e) => {
+  const handleEmail = (e) => {
+    console.log(e)
     e.preventDefault();
-    
-    emailjs.sendForm('service_zpk7l9j', 'template_abkx4bp',  form.
-      current, 'UehhIX3n_44365q0T')
+    dispatch(sendEmail(values))
+    setValues({})
     e.target.reset()
   };
 
@@ -74,8 +83,7 @@ const Contact = () => {
           
           <form 
             className="contact__form" 
-            ref={form}
-            onSubmit={sendEmail}
+            onSubmit={handleEmail}
           >
             <div className="contact__form-div">
               <label  className="contact__form-tag">Name</label>
@@ -83,6 +91,8 @@ const Contact = () => {
               <input 
                 type="text" 
                 name="name"
+                value={values.name}
+                onChange={handleChanges('name')}
                 className="contact__form-input"
                 placeholder="Enter Name"
               />
@@ -96,9 +106,10 @@ const Contact = () => {
                 name="email"
                 className="contact__form-input"
                 placeholder="Enter Your Email"
+                value={values.to}
+                onChange={handleChanges('to')}
               />
             </div>
-            
             <div className="contact__form-div contact__form-area">
               <label className="contact__form-tag">Message</label>
               <textarea 
@@ -107,10 +118,12 @@ const Contact = () => {
                 rows="10"
                 className="contact__form-input"
                 placeholder="Write Your Project"
+                value={values.text}
+                onChange={handleChanges('text')}
               ></textarea>
             </div>
             
-            <button className="button button--flex">
+            <button type='submit' className="button button--flex">
               Send Message
               <svg
                   class="button__icon"

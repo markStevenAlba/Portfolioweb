@@ -1,17 +1,30 @@
 import React, { useState } from 'react';
+import { useSelector } from 'react-redux';
 import "./header.css";
 
 const Header = () => {
+  const { isAuth} = useSelector(a => a.auth);
   /*============ Toggle  Menu======== */
   const [Toggle, showMenu] = useState(false);
   const [activeNav, setActiveNav] = useState("#home");
-  
+
+  const handleLogout = () => {
+    localStorage.clear();
+    window.location.href = "/";
+  }
+
   return (
  <header className="header">
   <nav className="nav container">
-    <a href="index.html" className="nav__logo">
+   {isAuth ?  <div  className="nav__logo"
+    onClick={() => handleLogout()}
+   >
       Mel
-      </a>
+      </div> : 
+       <a href="/" className="nav__logo">
+       Mel
+       </a>
+      }
 
     <div className={Toggle ? "nav__menu show-menu" :
   "nav__menu"}>

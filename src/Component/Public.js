@@ -11,11 +11,16 @@ import Contact from '../components/contact/Contact';
 import Work from '../components/work/Work';
 import Footer from '../components/footer/Footer';
 import ScrollUp from '../components/scrollup/ScrollUp';
+import { useSelector } from 'react-redux';
 
 const App = () => {
+  const { isAuth } = useSelector(a => a.auth);
+
+
   return (
     <>
-    {/* <Header /> */}
+  
+    <Header />
     <main className="main">
       <Home/>
       <About/>
@@ -26,8 +31,8 @@ const App = () => {
       <Testimonials/>
       <Contact/>
     </main>
-      {/* <Footer /> */}
-      {/* <ScrollUp /> */}
+      <Footer />
+      <ScrollUp />
     </>
   )
 }
