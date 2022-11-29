@@ -8,7 +8,7 @@ const WorkItems = ({item}) => {
     
         <h3 className="work__title">{item.title}</h3>
     
-        <a href={item.link} className="work__button">
+        <a href={item.link} className="work__button" target="_blank">
             Demo
             <i className="bx bx-right-arrow-alt work__button-icon"></i>
         </a>

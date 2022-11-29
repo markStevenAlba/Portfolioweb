@@ -3,44 +3,50 @@ import { projectsData } from './Data'
 import { projectsNav } from './Data'
 import WorkItems from './WorkItems'
 
-const Works = () => {
+const Works = ({data}) => {
     const [item, setItem] = useState({ name: 'All'});
     const [projects, setProjects] = useState([]);
+    const [projectsNavs, setProjectsNav] = useState([]);
     const [active, setActive] = useState(0);
     
     useEffect(() => {
         if (item.name === "All"){
-            setProjects(projectsData);
+            setProjects(data);
         } else {
-        const newProjects = projectsData.filter((project) => {
+        const newProjects = data.filter((project) => {
                 return project.category === item.name;
             });
             setProjects(newProjects);
         }
-    }, [item]); 
+
+        setProjectsNav(projectsNav)
+    }, [data, item, projectsNav]); 
 
     const handleClick = (e, index) => {
         setItem({ name: e.target.textContent });
         setActive(index);
-        console.log('nice')
     };
 
+    let projNavs =  projectsNavs.map((item, index) => {
+        return (
+            <span 
+                onClick={(e) => {
+                    handleClick(e, index);
+                }}
+                className={`${active === index ? 'active__work' : ''} work__item`}
+                key={index}
+                >
+                {item.name}
+            </span>
+        )
+})
+
+
+console.log(active)
   return (
     <div>
         <div className="work__filters">
-            {projectsNav.map((item, index) => {
-                return (
-                    <span 
-                        onClick={(e) => {
-                            handleClick(e, index);
-                        }}
-                        className={`${active === index ? 'active__work' : ''} work__item`}
-                        key={index}
-                        >
-                        {item.name}
-                    </span>
-                )
-})}
+            {projNavs}
         </div>
         
         <div className="work__container container grid">

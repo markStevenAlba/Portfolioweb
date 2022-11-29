@@ -12,10 +12,20 @@ justify-self: center;
 }
 
 .about__info {
-  grid-template-columns: repeat(3, 140px);
+  grid-template-columns: repeat(1, 140px);
   gap: 0.5rem;
   margin-bottom: var(--mb-2);
 }
+
+.about__info__container {
+  /* grid-template-columns: repeat(5, 140px); */
+  /* gap: 0.5rem; */
+  /* width: rem; */
+  width: 500px;
+  /* margin-bottom: var(--mb-2); */
+}
+
+
 
 .about__box {
   background-color: var(--container-color);
@@ -54,6 +64,10 @@ justify-self: center;
     row-gap: 2.5rem;
   }
 
+  .about__info__container {
+    width: 90vw;
+  }
+
   .about__img {
     width: 220px;
   }
@@ -66,7 +80,7 @@ justify-self: center;
   }
 
   .about__info {
-    justify-content: center;
+    /* justify-content: center; */
   }
 
   .about__description {
@@ -81,8 +95,12 @@ justify-self: center;
   grid-template-columns: repeat(3, 1fr);
 }
 
+.about__info__container {
+  width: 90vw;
+}
+
 .about__description {
-padding: 0;
+padding: 1rem;
 }
 
 }

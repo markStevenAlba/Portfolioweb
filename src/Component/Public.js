@@ -32,8 +32,6 @@ const App = () => {
 
 
 
-  console.log(values)
-
   return (
     <>
   
@@ -44,7 +42,7 @@ const App = () => {
       <Skills/>
       <Services/>
       <Qualification/>
-      <Work />
+      <Work data={values}/>
       <Testimonials/>
       <Contact data={values} />
     </main>

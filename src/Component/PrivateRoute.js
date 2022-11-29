@@ -7,7 +7,6 @@ const PrivateRoute = ({component: Component, ...rest}) => {
     // check your authentication here. 
     // For example : cookied.get(), localStorage.get() etc...
     // set isLogin -> true/false 
-        console.log(isAuth)
     return (
         // Show the component only when the user is logged in
         // Otherwise, redirect the user to /login page

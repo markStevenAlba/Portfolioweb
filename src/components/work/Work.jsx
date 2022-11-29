@@ -1,8 +1,28 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./work.css"
 import Works from './Works';
 
-const Work = () => {
+const Work = ({data}) => {
+    const [values, setValues] = useState([]);
+
+    useEffect(() => {
+        let { contents, profile } = data;
+
+        let works = [];
+
+        if(contents && contents.length !== 0) {
+            let work = contents.find(a => a.type === 'works');
+            console.log(work)
+            works = work.contents;
+        }
+
+        console.log(data)
+        // let works = 
+        setValues(works)
+
+    }, [data])
+
+
     return (
         <section className='work section' id='portfolio'>
             <h2 className='section__title'>Portfolio</h2>
@@ -11,7 +31,7 @@ const Work = () => {
                 Most recent works
             </span>
             
-            <Works />
+            <Works data={values}/>
         </section>
     );
 };

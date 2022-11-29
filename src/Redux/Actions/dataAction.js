@@ -4,18 +4,14 @@ import { API_URL } from '../../commonData';
 
 
 export function sendEmail  (data) {
-    console.log(data)
 
     return dispatch => {
-        console.log(data)
       return axios.post(`${API_URL}/auth/email`, data)
             .then(response => {
-                console.log(response)
                     if(response.status === 200) {
                         dispatch(success(response.data));
                     }
                     dispatch(failure(response));
-                    console.log(response);
                     return response
                 }
             ).catch(error => {

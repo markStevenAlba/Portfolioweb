@@ -167,20 +167,20 @@
     padding-top: 3.5rem;
   }
 
-  .home_img {
+  .home__img {
     order: initial;
-    justify-self: initial;
-  }
+    justify-self: initial; 
+   }
 
   .home__data {
     grid-column: 1/3;
   }
 
-  .home__img {
+  /* .home__img {
     box-shadow: inset 0 0 0 6px rgb(255 255 255 / 30%);
     width: 200px;
     height: 200px;
-  }
+  } */
 
   .home__scroll {
     display: none;

@@ -44,7 +44,7 @@ const About = ({data}) => {
            <p className="about__description">{values.description}
            </p>
            <br/><br/>
-           <a download="" href={CV} className="button
+           <a download="" href={values.link} target="_blank" className="button
            button--flex">Download CV
            <svg
                 className="button__icon"

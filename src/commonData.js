@@ -1,4 +1,61 @@
+import Work1 from "./assets/work1.jpg";
+import Work2 from "./assets/work2.jpg";
+import Work3 from "./assets/work3.jpg";
+import Work4 from "./assets/work4.jpg";
+import Work5 from "./assets/work5.jpg";
+import Doovote from "./assets/doovote.png";
+
+
+import CV from "./assets/john-geli-CV.pdf";
+
+
 export const API_URL = "https://docampaign.online/v1";
+
+
+export const PROJECTS = [
+    {
+      id: 1,
+      image: Work1,
+      title: "POS",
+      category: "Web",
+      link: "/pos"
+    },
+    {
+      id: 2,
+      image: Work2,
+      title: "Meet",
+      category: "App",
+      link: "/meet"
+    },
+    {
+        id: 3,
+        image: Doovote,
+        title: "Doovote",
+        category: "App",
+        link: "https://doovote.com"
+      },
+    // {
+    //   id: 3,
+    //   image: Work3,
+    //   title: "Brand Design",
+    //   category: "Design",
+    //   link: "/netflix"
+    // },
+    // {
+    //   id: 4,
+    //   image: Work4,
+    //   title: "App Movies",
+    //   category: "App",
+    //   link: "/blog"
+    // },
+    // {
+    //   id: 5,
+    //   image: Work5,
+    //   title: "Web Design",
+    //   category: "Web",
+    //   link: "/inventory"
+    // },
+];
 
 export const PROFILES = [
     {
@@ -29,7 +86,7 @@ export const PROFILES = [
                         title: "",
                         subtitle: "",
                         description: "",
-                        link: "www.linkedin.com/in/john-benedict-geli-16941a21a",
+                        link: "https://linkedin.com/in/john-benedict-geli-16941a21a",
                         icon: "uil uil-linkedin",
                       },
                       {
@@ -80,7 +137,7 @@ export const PROFILES = [
                 title: "About Me",
                 subtitle: "My Introduction",
                 description: "Frontend developer, I create web pages with UI / UX user interface, I have years of experience and many clients are happy with the projects carried out.",
-                link: "",
+                link: CV,
                 cover: "",
                 contents: [
                     {
@@ -112,7 +169,18 @@ export const PROFILES = [
                         icon: "bx bx-book",
                       },
                 ]
+            },
+            {
+                type: "works",
+                title: "Portfolio",
+                subtitle: "Most recent works",
+                description: "",
+                link: "",
+                cover: "",
+                contents: PROJECTS
             }
         ]
     }
 ]
+
+

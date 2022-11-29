@@ -13,10 +13,8 @@ export function login(data) {
 
 
 export function logout  (data) {
-    console.log(data)
 
     return dispatch => {
-        console.log(data)
         dispatch({type: LOGOUT})
     };
    
@@ -34,7 +32,6 @@ export function getUserData  () {
                         dispatch({type: SET_USER, payload: { profile, user: res.data }})
                     }
                     dispatch(failure(res));
-                    console.log(res);
                     return res
                 }
             ).catch(error => {

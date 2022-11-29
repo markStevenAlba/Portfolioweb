@@ -19,10 +19,8 @@ function Login(props) {
         e.preventDefault();
         dispatch(login(values))
         .then(a => {
-            console.log(a.status)
             let { token, profile } = a.data;
             if(a.status === 200){
-                console.log(token)
                 localStorage.setItem('idToken', `Bearer ${token}`);
                 dispatch({type: SET_AUTHENTICATED})
                 dispatch({type: SET_USER, payload: { user: a.data, profile}});
@@ -74,7 +72,7 @@ function Login(props) {
             <button type='submit' className="button button--flex">
               Login
               <svg
-                  class="button__icon"
+                  className="button__icon"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"

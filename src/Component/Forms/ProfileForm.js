@@ -7,7 +7,7 @@ export default function ProfileForm() {
 
   return (
     <>
-   <i class="uil uil-pen edit" onClick={() => setOpen(true)}></i>
+   <i className="uil uil-pen edit" onClick={() => setOpen(true)}></i>
     <div className={open ? "costum__modal active-modal"
     : "costum__modal" }>
      <div className="costum__modal-content">

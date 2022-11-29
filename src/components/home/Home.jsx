@@ -27,18 +27,17 @@ const Home = ({data = { contents: [], profile: {} }}) => {
     setSocials(socialLinks.contents ? socialLinks.contents : [])
   }, [data])
 
-  console.log(socials)
-  console.log(accountProfile)
-  console.log(data)
-
   return (
     <section className="home section" id="home">
       <div className= "home__container container grid">
+        
         <div className= "home__content grid">
+        <div className= "home__img"></div>
+
              <Social data={socials} />
-             <div className= "home__img"></div>
              <Data data={accountProfile}/>
         </div>
+
          <ScrollDown />        
       </div>
     </section>

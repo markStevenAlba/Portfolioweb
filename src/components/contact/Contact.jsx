@@ -24,7 +24,6 @@ const Contact = ({data}) => {
   }
   
   const handleEmail = (e) => {
-    console.log(e)
     e.preventDefault();
     dispatch(sendEmail(values))
     setValues({})
@@ -44,7 +43,6 @@ const Contact = ({data}) => {
 
   }, [data])
 
-  console.log(contacts)
   return (
     <section className="contact section" id="contact">
       <h2 className="section__title">Get in touch</h2>
@@ -208,7 +206,7 @@ const Contact = ({data}) => {
             <button type='submit' className="button button--flex">
               Send Message
               <svg
-                  class="button__icon"
+                  className="button__icon"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
