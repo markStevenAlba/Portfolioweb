@@ -171,8 +171,8 @@ const Contact = ({data}) => {
               <input 
                 type="text" 
                 name="name"
-                value={values.name}
-                onChange={handleChanges('name')}
+                value={values.subject}
+                onChange={handleChanges('subject')}
                 className="contact__form-input"
                 placeholder="Enter Name"
               />
