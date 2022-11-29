@@ -1,1 +1,1 @@
-export const API_URL = "http://localhost:5004/api/v1";
+export const API_URL = "https://docampaign.online/v1";
