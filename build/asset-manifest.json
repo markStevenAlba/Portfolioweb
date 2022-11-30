@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.10eb3da8.css",
-    "main.js": "/static/js/main.d2cfc369.js",
+    "main.css": "/static/css/main.a415f82b.css",
+    "main.js": "/static/js/main.c793713b.js",
+    "static/media/netflix.png": "/static/media/netflix.fca9baf0e2f8756cf082.png",
     "static/media/john-geli-CV.pdf": "/static/media/john-geli-CV.f7f3dac913ba4f1c5ccc.pdf",
     "static/media/doovote.png": "/static/media/doovote.f5106c0f36e64df6308e.png",
     "static/media/about.jpg": "/static/media/about.e4dbee09a5076523f8e6.jpg",
@@ -16,11 +17,11 @@
     "static/media/testimonial1.png": "/static/media/testimonial1.89079c1d25f2c94ceb89.png",
     "static/media/John-Cv.pdf": "/static/media/John-Cv.e83747cf513e0b21a7f1.pdf",
     "index.html": "/index.html",
-    "main.10eb3da8.css.map": "/static/css/main.10eb3da8.css.map",
-    "main.d2cfc369.js.map": "/static/js/main.d2cfc369.js.map"
+    "main.a415f82b.css.map": "/static/css/main.a415f82b.css.map",
+    "main.c793713b.js.map": "/static/js/main.c793713b.js.map"
   },
   "entrypoints": [
-    "static/css/main.10eb3da8.css",
-    "static/js/main.d2cfc369.js"
+    "static/css/main.a415f82b.css",
+    "static/js/main.c793713b.js"
   ]
 }

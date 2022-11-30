@@ -180,7 +180,6 @@ const Contact = ({data}) => {
             
             <div className="contact__form-div">
               <label  className="contact__form-tag">Mail</label>
-            
               <input 
                 type="email" 
                 name="email"

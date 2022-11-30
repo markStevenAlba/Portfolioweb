@@ -4,6 +4,7 @@ import Work3 from "./assets/work3.jpg";
 import Work4 from "./assets/work4.jpg";
 import Work5 from "./assets/work5.jpg";
 import Doovote from "./assets/doovote.png";
+import Netflix from "./assets/netflix.png";
 
 
 import CV from "./assets/john-geli-CV.pdf";
@@ -34,6 +35,13 @@ export const PROJECTS = [
         category: "App",
         link: "https://doovote.com"
       },
+      {
+        id: 4,
+        image: Netflix,
+        title: "NorthFlix",
+        category: "App",
+        link: "/netflix"
+      }
     // {
     //   id: 3,
     //   image: Work3,
