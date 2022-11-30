@@ -249,7 +249,7 @@ export const PROFILES = [
                         icon: "bx bxl-whatsapp",
                       },{
                         title: "Skype",
-                        subtitle: "jaybee.aicpa@outlook.com",
+                        subtitle: "jezedevkiel21@gmail.com",
                         description: "",
                         link: "https://join.skype.com/invite/ywfxqv9NGiPP",
                         icon: "bx bxl-skype",
