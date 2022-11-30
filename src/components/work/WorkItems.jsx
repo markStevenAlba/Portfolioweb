@@ -1,10 +1,9 @@
 import React from 'react'
 
 const WorkItems = ({item}) => {
-  console.log(item)
   return (
     <div className="work__card" key={item.id}> 
-        <img src={item.image} alt='' className="work__image" />        
+        <img src={item.cover} alt='' className="work__image" />        
     
         <h3 className="work__title">{item.title}</h3>
     

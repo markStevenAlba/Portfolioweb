@@ -12,12 +12,9 @@ const Work = ({data}) => {
 
         if(contents && contents.length !== 0) {
             let work = contents.find(a => a.type === 'works');
-            console.log(work)
             works = work.contents;
         }
 
-        console.log(data)
-        // let works = 
         setValues(works)
 
     }, [data])

@@ -1,66 +1,63 @@
+import { useState, useEffect } from 'react';
 import './skills.css';
 
 
-const Frontend = () => {
+const Frontend = ({data = {}}) => {
+    let [values, setValues] = useState([]);
+
+
+    useEffect(() => {
+      let { contents } = data;
+      
+      
+      if(contents && contents.length !== 0){
+        setValues(contents);
+      }
+  
+  
+    }, [data])
+
+
+let middle = Math.floor(values.length / 2);
+
+let left = values.slice(0, middle).map(a => {
+  return (
+    <div className="skills__data">
+    <i className={a.icon}></i>
+    <div>
+        <h3 className="skills__name">{a.title}</h3>
+        <span className="skills__level">{a.subtitle}</span>
+    </div>
+  </div>
+  )
+});
+
+
+let right = values.slice(middle).map(a => {
+  return (
+    <div className="skills__data">
+    <i className={a.icon}></i>
+    <div>
+        <h3 className="skills__name">{a.title}</h3>
+        <span className="skills__level">{a.subtitle}</span>
+    </div>
+  </div>
+  )
+});
+
+
   return (
     <div className="skills__content">
-      <h3 className="skills__title">Frontend Developer</h3>
+      <h3 className="skills__title">{data.title}</h3>
       
       <div className="skills__box">
       
         <div className="skills__group">
-          <div className="skills__data">
-            <i className="bx bxl-html5"></i>
-            <div>
-                <h3 className="skills__name">HTML5</h3>
-                <span className="skills__level">Basic</span>
-            </div>
-          </div>
-          
-          <div className="skills__data">
-            <i className="bx bxl-css3"></i>
-            <div>
-                <h3 className="skills__name">CSS3</h3>
-                <span className="skills__level">Advanced</span>
-            </div>
-          </div>
-          
-          <div className="skills__data">
-            <i className="bx bxl-javascript"></i>
-            <div>
-                <h3 className="skills__name">JavaScript</h3>
-                <span className="skills__level">Intermediate</span>
-            </div>
-          </div>
+            {left}
         </div>
         
         <div className="skills__group">
-          <div className="skills__data">
-            <i className="bx bxl-bootstrap"></i>
-          
-            <div>
-                <h3 className="skills__name">Bootstrap</h3>
-                <span className="skills__level">Intermediate</span>
-            </div>
-          </div>
-          
-          <div className="skills__data">
-            <i className="bx bxl-git"></i>
-          
-            <div>
-                <h3 className="skills__name">Git</h3>
-                <span className="skills__level">Intermediate</span>
-            </div>
-          </div>
-          
-          <div className="skills__data">
-            <i className="bx bxl-react"></i>
-          
-            <div>
-                <h3 className="skills__name">React</h3>
-                <span className="skills__level">Intermediate</span>
-            </div>
-          </div>
+          {right}
           
         </div>
         

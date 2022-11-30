@@ -21,9 +21,36 @@ const App = () => {
 
 
   useEffect(() => {
+    const pathname = window.location.pathname;
+    let myPath = 'jaybeegeli';
 
-   
-    let profile = PROFILES.find(a => a.username === 'jaybeegeli');
+    var ret = pathname.replace('/profile','');
+  
+    if(ret){
+      ret = ret.split('/')[1].split('#')[0];
+    }
+
+
+
+
+    console.log(ret)
+    let localPath = localStorage.getItem('profile');
+
+    if(ret){
+      console.log('sulod myda')
+      myPath = ret;
+      localStorage.setItem('profile', myPath);
+    }
+
+
+
+    if(localPath){
+      console.log('sulod myda local')
+      myPath = localPath;
+    }
+
+    
+    let profile = PROFILES.find(a => a.username === myPath);
 
     setValues(profile)
 
@@ -39,14 +66,14 @@ const App = () => {
     <main className="main">
       <Home data={values}/>
       <About data={values}/>
-      <Skills/>
-      <Services/>
-      <Qualification/>
+      <Skills data={values}/>
+      <Services />
+      {/* <Qualification/> */}
       <Work data={values}/>
       <Testimonials/>
       <Contact data={values} />
     </main>
-      <Footer />
+      <Footer/>
       <ScrollUp />
     </>
   )

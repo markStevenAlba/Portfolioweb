@@ -14,7 +14,7 @@ const Works = ({data}) => {
             setProjects(data);
         } else {
         const newProjects = data.filter((project) => {
-                return project.category === item.name;
+                return project.description === item.name;
             });
             setProjects(newProjects);
         }
@@ -42,7 +42,6 @@ const Works = ({data}) => {
 })
 
 
-console.log(active)
   return (
     <div>
         <div className="work__filters">

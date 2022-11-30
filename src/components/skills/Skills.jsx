@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./skills.css";
 import Frontend from "./Frontend";
 import Backend from "./Backend";
@@ -11,14 +11,52 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper";
 
 
-const Skills = () => {
+const Skills = ({data = {}}) => {
+  const [values, setValues] = useState({});
+  const [frontEnd, setFE] = useState({});
+  const [backEnd, setBE] = useState({});
+
+
+
+
+
+
+  useEffect(() => {
+    let { contents } = data;
+    let about = {};
+    
+    
+    if(contents && contents.length !== 0){
+      about = contents.find(a => a.type === 'skills');
+      if(about){
+        let fe = about.contents.find(a => a.description === 'frontend');
+        let be = about.contents.find(a => a.description === 'backend');
+
+
+        setFE(fe);
+        setBE(be)
+
+
+
+      }
+
+
+    }
+
+
+
+
+    setValues(about);
+  }, [data])
+
+
   return (
     <section className="skills section" id="skills">
-      <h2 className="section__title">Skills</h2>
-      <span className="section__subtitle">My Technical Level</span>
+      <h2 className="section__title">{values.title}</h2>
+      <span className="section__subtitle">{values.subtitle}</span>
       
 
-      <Swiper className="skills__container container"
+      {/* <Swiper className="skills__container container"
           loop={true}
           grabCursor={true}
           spaceBetween={15}
@@ -43,10 +81,17 @@ const Skills = () => {
       <SwiperSlide className="skills__content" >
         <Backend />
         </SwiperSlide>
-        </Swiper>
-      {/* <div className="skills__container container grid">
-     
-      </div> */}
+        </Swiper> */}
+      <div className="skills__container container">
+      <div className="skills__content">
+      <Frontend data={frontEnd} />
+
+     </div>
+       <div className="skills__content">
+       <Backend data={backEnd}/>
+
+      </div>
+      </div>
     </section>
   );
 };
