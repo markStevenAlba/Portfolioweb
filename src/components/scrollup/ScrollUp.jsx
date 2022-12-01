@@ -4,8 +4,9 @@ import "./scrollup.css";
 const ScrollUp = () => {
   window.addEventListener("scroll", function () {
     const scrollUp = document.querySelector(".scrollup");
-    if (this.scrollY >= 80) scrollUp.classList.add("scroll-header");
-    else scrollUp.classList.remove("scroll-header");
+    if (this.scrollY >= 560) scrollUp.classList.add
+    ("show-scroll");
+    else scrollUp.classList.remove("show-scroll");
   });
   
   const [Toggle, showMenu] = useState(false);
