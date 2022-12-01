@@ -23,9 +23,9 @@ const Qualification = () => {
           }
             onClick={() => toggleTab(1)}  
             >
-            <i className="uil uil-graduation-cap qualification__icon">
-              Education
-            </i>{" "}
+         &nbsp;<i className="uil uil-graduation-cap qualification__icon">
+             
+            </i>{" "}&nbsp;Education&nbsp;
           </div>
           
           <div className={toggleState === 2 
@@ -34,9 +34,8 @@ const Qualification = () => {
           }
             onClick={() => toggleTab(2)}  
           >
-            <i className="uil uil-graduation-cap qualification__icon">
-              Experience
-            </i>{" "}
+          &nbsp;  <i className="uil uil-graduation-cap qualification__icon">
+            </i>{"  "}&nbsp;Experience&nbsp;
           </div>
         </div>
         

@@ -33,7 +33,7 @@
 }
 
 .qualification__icon {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   margin-right: var(--mb-0-25)
 }
 
@@ -107,8 +107,13 @@
   }
   
   .qualification__button {
-    margin: 0 var(--mb-0-75)
+    margin: 0 var(--mb-0-75);
+    font-size: 1.3rem;
   }
+
+ 
+
+
 }
 
 /*for small devices */
@@ -119,5 +124,14 @@
 
   .qualification__name {
     font-size: var(--small-font-size);
+  }
+
+  .qualification__icon {
+    font-size: 1.3rem;
+    margin-right: var(--mb-0-25)
+  }
+
+  .qualification__button {
+    font-size: 1.3rem;
   }
 }

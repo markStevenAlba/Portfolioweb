@@ -8,9 +8,6 @@ const Home = ({data = { contents: [], profile: {} }}) => {
   const [socials, setSocials] = useState([]);
   const [accountProfile, setProfile] = useState({});
 
-
-
-
   useEffect(() => {
     let { contents, profile } = data;
 
