@@ -32,7 +32,11 @@ const Home = ({data = { contents: [], profile: {} }}) => {
       <div className= "home__container container grid">
         
         <div className= "home__content grid">
-        <div className= "home__img"></div>
+        <div style={{
+                background: `url(${accountProfile.cover})`,
+                }}
+                className= "home__img" 
+                ></div>
 
              <Social data={socials} />
              <Data data={accountProfile}/>

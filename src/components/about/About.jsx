@@ -28,7 +28,7 @@ const About = ({data}) => {
   }, [data])
 
 
-
+  console.log(values)
 
   return (
     <section className="about section" id="about">
@@ -36,7 +36,7 @@ const About = ({data}) => {
       <span className="section__subtitle">{values.subtitle}</span>
 
       <div className="about__container container grid">
-      <img src={AboutImg} alt="" className="about__img" />
+      <img src={values.cover} alt="" className="about__img" />
 
       <div className="about__data">
            <Info  data={values.contents}  />

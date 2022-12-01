@@ -14,7 +14,7 @@ justify-self: center;
 .about__info {
   grid-template-columns: repeat(1, 140px);
   gap: 0.5rem;
-  margin-bottom: var(--mb-2);
+  /* margin-bottom: var(--mb-1); */
 }
 
 .about__info__container {

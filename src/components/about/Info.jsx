@@ -19,7 +19,7 @@ const Info = ({data}) => {
     } 
 
   }, [data])
-
+  console.log(values.length)
   return (
     <div
      className="about__info"
@@ -32,16 +32,8 @@ const Info = ({data}) => {
           pagination={{
             clickable: true,
           }}
-          // slidesPerView={3}
-          breakpoints={{
-            576: {
-              slidesPerView: 3
-            },
-            768: {
-              slidesPerView: 3,
-              spaceBetween: 25,
-            }
-          }}
+          slidesPerView={(values.length >= 3 || values.length === 0) ? 3 : values.length}
+       
           modules={[Pagination]}
         >
         {values.map((a, index) => {
