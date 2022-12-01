@@ -29,11 +29,8 @@ const App = () => {
     if(ret){
       ret = ret.split('/')[1].split('#')[0];
     }
-
-
-
-
     console.log(ret)
+
     let localPath = localStorage.getItem('profile');
 
     if(ret){
@@ -68,7 +65,7 @@ const App = () => {
       <About data={values}/>
       <Skills data={values}/>
       <Services />
-      <Qualification/>
+      <Qualification />
       <Work data={values}/>
       <Testimonials/>
       <Contact data={values} />
