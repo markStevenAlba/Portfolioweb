@@ -3,9 +3,17 @@ import Work2 from "./assets/work2.jpg";
 import Work3 from "./assets/work3.jpg";
 import Work4 from "./assets/work4.jpg";
 import Work5 from "./assets/work5.jpg";
+
 import Doovote from "./assets/doovote.png";
 import Netflix from "./assets/netflix.png";
 import Dashboard from "./assets/Dashboard.png";
+import Pos from "./assets/Pos.png";
+import Meet from "./assets/Meet.png";
+import Blog from "./assets/Blog.png";
+import Inventory from "./assets/Inventory.png";
+import Ecommerce from "./assets/Ecommerce.png";
+import Messaging from "./assets/Messaging.png";
+
 
 import CV from "./assets/john-geli-CV.pdf";
 
@@ -14,60 +22,67 @@ export const API_URL = "https://docampaign.online/v1";
 export const PROJECTS = [
     {
       id: 1,
-      cover: Work1,
+      cover: Pos,
       title: "POS",
       description: "Web",
       link: "/pos"
     },
     {
       id: 2,
-      cover: Work2,
+      cover: Meet,
       title: "Meet",
       description: "App",
       link: "/meet"
     },
     {
-        id: 3,
-        cover: Doovote,
-        title: "Doovote",
-        description: "App",
-        link: "https://doovote.com"
-      },
-      {
-        id: 4,
-        cover: Netflix,
-        title: "NorthFlix",
-        description: "App",
-        link: "/netflix"
-      },
-      {
-        id: 4,
-        cover: Dashboard,
-        title: "Admin Panel",
-        description: "Design",
-        link: "/dashboard"
-      }
-    // {
-    //   id: 3,
-    //   cover: Work3,
-    //   title: "Brand Design",
-    //   description: "Design",
-    //   link: "/netflix"
-    // },
-    // {
-    //   id: 4,
-    //   cover: Work4,
-    //   title: "App Movies",
-    //   description: "App",
-    //   link: "/blog"
-    // },
-    // {
-    //   id: 5,
-    //   cover: Work5,
-    //   title: "Web Design",
-    //   description: "Web",
-    //   link: "/inventory"
-    // },
+      id: 3,
+      cover: Doovote,
+      title: "Doovote",
+      description: "App",
+      link: "https://doovote.com"
+    },
+    {
+      id: 4,
+      cover: Netflix,
+      title: "NorthFlix",
+      description: "App",
+      link: "/netflix"
+    },
+    {
+      id: 5,
+      cover: Dashboard,
+      title: "Admin Panel",
+      description: "Design",
+      link: "/dashboard"
+    },
+    {
+      id: 6,
+      cover: Inventory,
+      title: "Inventory Management",
+      description: "App",
+      link: "/inventory"
+    },
+    {
+      id: 7,
+      cover: Blog,
+      title: "Blog Web Site",
+      description: "Web",
+      link: "/blog"
+    },
+    {
+      id: 8,
+      cover: Ecommerce,
+      title: "Ecommerce Web",
+      description: "Design",
+      link: "/ecommerce"
+    },
+    {
+      id: 9,
+      cover: Messaging,
+      title: "Messaging Web App",
+      description: "App",
+      link: "/messaging"
+    },
 ];
 
 export const SKILLS = [

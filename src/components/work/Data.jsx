@@ -3,10 +3,10 @@ import Work2 from "../../assets/work2.jpg";
 import Work3 from "../../assets/work3.jpg";
 import Work4 from "../../assets/work4.jpg";
 import Work5 from "../../assets/work5.jpg";
-import pos from "../../assets/pos.png";
+import pos from "../../assets/Pos.png";
 import netflix from "../../assets/netflix.png";
-import meet from "../../assets/meet.png";
-import blog from "../../assets/blog.png";
+import Meet from "../../assets/Meet.png";
+import blog from "../../assets/Blog.png";
 
 
 
@@ -20,7 +20,7 @@ export const projectsData = [
     },
     {
       id: 2,
-      image: meet,
+      image: Meet,
       title: "Meet",
       category: "App",
       link: "/meet"
