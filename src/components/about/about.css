@@ -18,11 +18,11 @@ justify-self: center;
 }
 
 .about__info__container {
-  /* grid-template-columns: repeat(5, 140px); */
-  /* gap: 0.5rem; */
+  grid-template-columns: repeat(1, 140px);
+  gap: 0.5rem;
   /* width: rem; */
   width: 500px;
-  /* margin-bottom: var(--mb-2); */
+  color: black;
 }
 
 
@@ -33,6 +33,7 @@ justify-self: center;
   border-radius: 0.75;
   text-align: center;
   padding: 1rem 1.25rem;
+  margin-bottom: var(--mb-2);
 }
 
 .about__icon{
@@ -55,6 +56,10 @@ justify-self: center;
   margin-bottom: var(--mb-2-5);
 }
 
+.swiper-pagination-bullet {
+  /* background-color: var(--text-color-dark) !important; */
+  /* color: black; */
+}
 
 /*============ BREAKPOINTS ======== */
 /* For large devices */
