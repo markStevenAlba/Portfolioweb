@@ -9,7 +9,12 @@ import Dashboard from "./assets/Dashboard.png";
 
 import CV from "./assets/john-geli-CV.pdf";
 
-export const API_URL = "https://docampaign.online/v1";
+//Dev
+// export const API_URL = "https://docampaign.online/v1";
+
+//Local
+export const API_URL = "http://localhost:5004/v1";
+
 
 export const PROJECTS = [
     {
@@ -176,7 +181,7 @@ export const PROFILES = [
         profile: {
             cover: "",
             nickname: "jaybee",
-            firstName: "John Benedict",
+            firstName: "John Benedicts",
             lastName: "Geli",
             position: "Software Engineer",
             bio: "I'm creative developer based in Tacloban City, Philippines, and I'm very passionate and dedicated to my work.",
@@ -299,10 +304,17 @@ export const PROFILES = [
               link: "",
               cover: "",
               contents: SKILLS
-          }
+          },{
+            type: "services",
+            title: "Services",
+            subtitle: "What I Offer 🙄",
+            description: "",
+            link: "",
+            cover: "",
+            contents: []
+        }
         ]
-    },
-        {
+    },{
         username: "jezekielisip",
         email: "jezedevkiel21@gmail.com",
         profile: {

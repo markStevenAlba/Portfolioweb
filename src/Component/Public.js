@@ -11,18 +11,30 @@ import Contact from '../components/contact/Contact';
 import Work from '../components/work/Work';
 import Footer from '../components/footer/Footer';
 import ScrollUp from '../components/scrollup/ScrollUp';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { PROFILES } from '../commonData';
+import { getContent } from '../Redux/Actions/dataAction';
 
 
 const App = () => {
+  const dispatch = useDispatch();
   const { isAuth } = useSelector(a => a.auth);
+  const { content } = useSelector(a => a.data);
+
   const [values, setValues] = useState({})
+
+  const handleGetContent = (val) => {
+        dispatch(getContent(val));
+  }
+
 
 
   useEffect(() => {
     const pathname = window.location.pathname;
     let myPath = 'jaybeegeli';
+
+
+
 
     var ret = pathname.replace('/profile','');
   
@@ -49,13 +61,29 @@ const App = () => {
       myPath = localPath;
     }
 
-    
-    let profile = PROFILES.find(a => a.username === myPath);
+    handleGetContent(myPath);
+    // let profile = PROFILES.find(a => a.username === myPath);
 
-    setValues(profile)
-
+    // setValues(profile)
     
   }, [])
+
+  
+
+  useEffect(() => {
+      console.log(content)
+    if(content._id){
+      setValues(content)
+    }
+
+  },[content])
+
+
+
+
+
+
+
 
 
 

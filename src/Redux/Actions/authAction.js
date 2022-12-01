@@ -27,6 +27,7 @@ export function getUserData  () {
       return axios.get(`${API_URL}/users/me`, { headers: authHeader() })
             .then(res => {
                 const { profile } = res.data;
+                console.log(res.data)
                     if(res.status === 200) {
                         dispatch({type: SET_AUTHENTICATED});
                         dispatch({type: SET_USER, payload: { profile, user: res.data }})
