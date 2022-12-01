@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import"./qualification.css";
 
 const Qualification = () => {
-  const [toggleState, setToggleState] = useState([]);
+  const [toggleState, setToggleState] = useState(1);
   
   const toggleTab = (index) => {
     setToggleState(index);
-  }
+  };
+  
 
   return (
     <section className="qualification section">
@@ -25,13 +26,13 @@ const Qualification = () => {
             <i className="uil uil-graduation-cap qualification__icon">
               Education
             </i>{" "}
-          
           </div>
+          
           <div className={toggleState === 2 
             ? "qualification__button qualification__active button--flex"
             : "qualification__button button--flex"
           }
-          onClick={() => toggleTab(2)}  
+            onClick={() => toggleTab(2)}  
           >
             <i className="uil uil-graduation-cap qualification__icon">
               Experience
@@ -40,11 +41,13 @@ const Qualification = () => {
         </div>
         
         <div className="qualification__sections">
+          
+          {/* EDUCATION */}
           <div 
             className={
               toggleState === 1
             ? "qualification__content qualification__content-active"
-          : "qualification__content qualification__content-active"
+          : "qualification__content"
           }
         >
             <div className="qualification__data">
@@ -57,7 +60,7 @@ const Qualification = () => {
                 </span>
                 <div className="qualification__calender">
                   <i className="uil uil-calendar-alt"></
-                  i> 2021 - Present
+                  i> 2018 - 2020
                 </div>
               </div>
               
@@ -85,7 +88,7 @@ const Qualification = () => {
                 </span>
                 <div className="qualification__calender">
                   <i className="uil uil-calendar-alt"></
-                  i> 2018 - 2020
+                  i> 2020 - 2021
                 </div>
               </div>
             </div>
@@ -100,7 +103,7 @@ const Qualification = () => {
                 </span>
                 <div className="qualification__calender">
                   <i className="uil uil-calendar-alt"></
-                  i> 2021 - Present
+                  i> 2018 - 2020
                 </div>
               </div>
               
@@ -132,11 +135,14 @@ const Qualification = () => {
                 </div>
               </div>
             </div>
-            
           </div>
-          <div className={toggleState === 2 ? 
-          "qualification__content qualification__content-active"
-          : "qualification__content" 
+          
+          {/* EXPERIENCE */}
+          <div 
+            className={
+              toggleState === 2 
+              ? "qualification__content qualification__content-active"
+            : "qualification__content" 
           }>
           
           <div className="qualification__data">
@@ -204,8 +210,8 @@ const Qualification = () => {
             </div>
             
           </div>
-        
         </div>
+        
       </div>
     </section>
   )

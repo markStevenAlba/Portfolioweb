@@ -25,8 +25,6 @@
 
 .qualification__content {
   background-color: var(--container-color);
-  padding: 1rem 9rem;
-  border-radius: 1.25rem;
   display: none; 
 }
 
@@ -67,7 +65,7 @@
   margin-bottom: var(--mb-1);
 }
 
-.qualification__calender {
+.qualification__calendar {
   font-size: var(--small-font-size);
 }
 
@@ -88,9 +86,11 @@
 }
 
 /*============ BREAKPOINTS ======== */
-/* For Large Devices */
+/* For large devices */
 @media screen and (max-width: 992px) {
   .qualification__container {
+    /* grid-template-columns: max-content;
+    row-gap: 2rem; */
     margin-left: auto;
     margin-right: auto;
   }
