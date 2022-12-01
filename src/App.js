@@ -24,17 +24,12 @@ if (token) {
   }
 }
 
-
-
 function App() {
   // const { isAuth } = useSelector(a => a.auth);
-  
-
 
   return (
     <Provider store={store}>
       <div className="App">
-        {/* <h1>REACT-REDUX BOILERPLATE WITH THUNK MIDDLEWARE</h1> */}
         <Router>
         {/* <div>
           <p><Link to="/public">public</Link></p>
