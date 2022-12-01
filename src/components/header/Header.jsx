@@ -35,7 +35,7 @@ const Header = ({data}) => {
           <li className= "nav__item">
           <a href="#home" onClick={() => setActiveNav('#home')} className={activeNav === "#home" ? 
             "nav__link active-link" : "nav__link"}>
-          {/* <i className="uil uil-estate nav__icon"></i> */}
+          <i className="uil uil-estate nav__icon"></i>
           Home
           </a>
         </li>
@@ -47,7 +47,7 @@ const Header = ({data}) => {
             className={activeNav === "#about" ? 
             "nav__link active-link" : "nav__link"}
           >
-          {/* <i className="uil uil-estate nav__icon"></i> */}
+          <i className="uil uil-info nav__icon"></i>
           About
           </a>
         </li>
@@ -59,7 +59,7 @@ const Header = ({data}) => {
             className={activeNav === "#skills" ? 
             "nav__link active-link" : "nav__link"}
           >
-          {/* <i className="uil uil-estate nav__icon"></i> */}
+          <i className="uil uil-chart nav__icon"></i>
           Skills
           </a>
         </li>
@@ -71,7 +71,7 @@ const Header = ({data}) => {
             className={activeNav === "#services" ? 
             "nav__link active-link" : "nav__link"}
           >
-          {/* <i className="uil uil-estate nav__icon"></i> */}
+          <i className="uil uil-setting nav__icon"></i>
           Services
           </a>
         </li>
@@ -83,7 +83,7 @@ const Header = ({data}) => {
             className={activeNav === "#portfolio" ? 
             "nav__link active-link" : "nav__link"}
           >
-          {/* <i className="uil uil-estate nav__icon"></i> */}
+          <i className="uil uil-briefcase nav__icon"></i>
           Portfolio
           </a>
         </li>
@@ -95,7 +95,7 @@ const Header = ({data}) => {
             className={activeNav === "#contact" ? 
             "nav__link active-link" : "nav__link"}
           >
-          {/* <i className="uil uil-estate nav__icon"></i> */}
+          <i className="uil uil-phone nav__icon"></i>
           Contact
           </a>
         </li>
