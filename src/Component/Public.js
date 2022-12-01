@@ -59,6 +59,8 @@ const App = () => {
     }
 
     let profile = PROFILES.find(a => a.username === myPath);
+    // let profile = PROFILES.find(a => a.username === 'jaybeegeli');
+
 
     setValues({...values, ...profile})
     handleGetContent(myPath);
@@ -94,7 +96,7 @@ const App = () => {
       <About data={values}/>
       <Skills data={values}/>
       <Services />
-      <Qualification />
+      <Qualification data={values}/>
       <Work data={values}/>
       <Testimonials/>
       <Contact data={values} />

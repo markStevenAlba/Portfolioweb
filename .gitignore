@@ -13,6 +13,9 @@ package-lock.json
 # production
 # /build
 
+
+src/commonData.js
+
 # misc
 .DS_Store
 .env.local

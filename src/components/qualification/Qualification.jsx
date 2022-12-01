@@ -1,17 +1,57 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./qualification.css";
 
-const Qualification = () => {
+const Qualification = ({data}) => {
   const [toggleState, setToggleState] = useState(1);
+  const [values, setValues] = useState({});
+  const [education, setEducation] = useState([]);
+  const [experience, setExperience] = useState([]);
+
 
   const toggleTab = (index) => {
     setToggleState(index);
   };
 
+  useEffect(() => {
+    let { contents } = data;
+    let qualification = {};
+    
+    
+    if(contents && contents.length !== 0){
+      qualification = contents.find(a => a.type === 'qualification');
+      let qContents = qualification.contents;
+
+      if(qContents && qContents.length !== 0){
+
+
+        let edu = qContents.filter(a => a.type === 'education');
+        
+        let exp = qContents.filter(a => a.type === 'experience');
+
+
+
+        setEducation(edu);
+        setExperience(exp)
+
+
+
+
+      }
+    
+    }
+
+    setValues(qualification)
+  }, [data])
+
+
+  console.log(education)
+  console.log(experience)
+
+
   return (
     <section className="qualification section">
-      <h2 className="section__title">Qualification</h2>
-      <span className="section__subtitle">My Personal Journey</span>
+      <h2 className="section__title">{values.title}</h2>
+      <span className="section__subtitle">{values.subtitle}</span>
 
       <div className="qualification__container container">
         <div className="qualification__tabs">
@@ -50,53 +90,31 @@ const Qualification = () => {
                 : "qualification__content"
             }
           >
-            <div className="qualification__data">
-              <div>
-                <h3 className="qualification__title">Holy Virgin Highschool</h3>
-                <span className="qualification__subtitle">
-                  Tacloban - Institute
-                </span>
-                <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i> 2013 - 2017
-                </div>
-              </div>
-
-              <div>
+     {education.map((a, index) => {
+              console.log(index % 2==0)
+              return (
+                <div className="qualification__data">
+                   {index % 2!=0 && ( <>  <div></div>  <div>
                 <span className="qualification__rounder"></span>
                 <span className="qualification__line "></span>
-              </div>
-            </div>
+              </div></>)}
 
-            <div className="qualification__data">
-              <div></div>
-              <div>
+                <div>
+                  <h3 className="qualification__title">{a.title}</h3>
+                  <span className="qualification__subtitle">
+                   {a.subtitle}
+                  </span>
+                  <div className="qualification__calender">
+                    <i className="uil uil-calendar-alt"></i> {a.description}
+                  </div>
+                </div>
+                {index % 2==0 && (   <div>
                 <span className="qualification__rounder"></span>
                 <span className="qualification__line "></span>
+              </div>)}
               </div>
-
-              <div>
-                <h3 className="qualification__title">UP Tacloban</h3>
-                <span className="qualification__subtitle">Tacloban - City</span>
-                <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i> 2018 - 2020
-                </div>
-              </div>
-            </div>
-
-            <div className="qualification__data">
-              <div>
-                <h3 className="qualification__title">Aclc College</h3>
-                <span className="qualification__subtitle">Cebu - City</span>
-                <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i> 2020 - 2022
-                </div>
-              </div>
-
-              <div>
-                <span className="qualification__rounder"></span>
-                <span className="qualification__line "></span>
-              </div>
-            </div>
+              )
+            })}
           </div>
 
           {/* EXPERIENCE */}
@@ -107,24 +125,34 @@ const Qualification = () => {
                 : "qualification__content"
             }
           >
-            <div className="qualification__data">
-              <div>
-                <h3 className="qualification__title">Product Designer</h3>
-                <span className="qualification__subtitle">
-                  Microsft - Spain
-                </span>
-                <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i> 2022 - Present
-                </div>
-              </div>
-
-              <div>
+            {experience.map((a, index) => {
+              console.log(index % 2==0)
+              return (
+                <div className="qualification__data">
+                   {index % 2==0 && ( <>  <div></div>  <div>
                 <span className="qualification__rounder"></span>
                 <span className="qualification__line "></span>
-              </div>
-            </div>
+              </div></>)}
 
-            <div className="qualification__data">
+                <div>
+                  <h3 className="qualification__title">{a.title}</h3>
+                  <span className="qualification__subtitle">
+                   {a.subtitle}
+                  </span>
+                  <div className="qualification__calender">
+                    <i className="uil uil-calendar-alt"></i> {a.description}
+                  </div>
+                </div>
+                {index % 2!=0 && (   <div>
+                <span className="qualification__rounder"></span>
+                <span className="qualification__line "></span>
+              </div>)}
+              </div>
+              )
+            })}
+        
+
+            {/* <div className="qualification__data">
               <div></div>
               <div>
                 <span className="qualification__rounder"></span>
@@ -171,7 +199,7 @@ const Qualification = () => {
                   <i className="uil uil-calendar-alt"></i> 2020 - 2021
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
