@@ -1,16 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.47026c90.css",
-    "main.js": "/static/js/main.2bdfa0ac.js",
-    "static/media/netflix.png": "/static/media/netflix.fca9baf0e2f8756cf082.png",
+    "main.js": "/static/js/main.1998e230.js",
+    "static/media/netflix.png": "/static/media/netflix.782ca1e7088576586960.png",
     "static/media/john-geli-CV.pdf": "/static/media/john-geli-CV.f7f3dac913ba4f1c5ccc.pdf",
     "static/media/doovote.png": "/static/media/doovote.f5106c0f36e64df6308e.png",
-    "static/media/blog.png": "/static/media/blog.b685bd3685e1b6f09982.png",
+    "static/media/Ecommerce.png": "/static/media/Ecommerce.d971b01b304243bf99de.png",
+    "static/media/Blog.png": "/static/media/Blog.b685bd3685e1b6f09982.png",
     "static/media/Dashboard.png": "/static/media/Dashboard.944dc1acb6df609e5d84.png",
+    "static/media/Messaging.png": "/static/media/Messaging.1d4d224e2bade73fa884.png",
+    "static/media/Inventory.png": "/static/media/Inventory.c72766252e65c090c014.png",
     "static/media/about.jpg": "/static/media/about.e4dbee09a5076523f8e6.jpg",
-    "static/media/pos.png": "/static/media/pos.d31beff5181e5ead457c.png",
+    "static/media/Pos.png": "/static/media/Pos.d31beff5181e5ead457c.png",
     "static/media/testimonial3.png": "/static/media/testimonial3.2e18bfe27c6d2e2e9fdc.png",
-    "static/media/meet.png": "/static/media/meet.dce4c0f898e42005dd52.png",
+    "static/media/Meet.png": "/static/media/Meet.dce4c0f898e42005dd52.png",
     "static/media/work2.jpg": "/static/media/work2.e52a0c2981a6c11ba468.jpg",
     "static/media/testimonial2.png": "/static/media/testimonial2.39a53f7f092f07f5bceb.png",
     "static/media/work4.jpg": "/static/media/work4.aee985961b648f4df1f2.jpg",
@@ -22,10 +25,10 @@
     "static/media/John-Cv.pdf": "/static/media/John-Cv.e83747cf513e0b21a7f1.pdf",
     "index.html": "/index.html",
     "main.47026c90.css.map": "/static/css/main.47026c90.css.map",
-    "main.2bdfa0ac.js.map": "/static/js/main.2bdfa0ac.js.map"
+    "main.1998e230.js.map": "/static/js/main.1998e230.js.map"
   },
   "entrypoints": [
     "static/css/main.47026c90.css",
-    "static/js/main.2bdfa0ac.js"
+    "static/js/main.1998e230.js"
   ]
 }
