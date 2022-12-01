@@ -40,7 +40,7 @@ const Qualification = () => {
           </div>
         </div>
         
-        <div className="qualification__sections">
+        <div className="qualification__sections container">
           
           {/* EDUCATION */}
           <div 
