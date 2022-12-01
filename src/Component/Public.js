@@ -70,11 +70,7 @@ const App = () => {
       <Home data={values}/>
       <About data={values}/>
       <Skills data={values}/>
-<<<<<<< HEAD
       <Services />
-=======
-      <Services data={values}/>
->>>>>>> d924b9eb815c7f4f5ab1daed18804ddb4b2d1d43
       <Qualification data={values}/>
       <Work data={values}/>
       <Testimonials data={values}/>
