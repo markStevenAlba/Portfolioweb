@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.74432b2c.css",
-    "main.js": "/static/js/main.fa053960.js",
+    "main.css": "/static/css/main.52a242b2.css",
+    "main.js": "/static/js/main.dce67420.js",
     "static/media/netflix.png": "/static/media/netflix.782ca1e7088576586960.png",
     "static/media/john-geli-CV.pdf": "/static/media/john-geli-CV.f7f3dac913ba4f1c5ccc.pdf",
     "static/media/doovote.png": "/static/media/doovote.f5106c0f36e64df6308e.png",
@@ -23,11 +23,11 @@
     "static/media/testimonial1.png": "/static/media/testimonial1.89079c1d25f2c94ceb89.png",
     "static/media/John-Cv.pdf": "/static/media/John-Cv.e83747cf513e0b21a7f1.pdf",
     "index.html": "/index.html",
-    "main.74432b2c.css.map": "/static/css/main.74432b2c.css.map",
-    "main.fa053960.js.map": "/static/js/main.fa053960.js.map"
+    "main.52a242b2.css.map": "/static/css/main.52a242b2.css.map",
+    "main.dce67420.js.map": "/static/js/main.dce67420.js.map"
   },
   "entrypoints": [
-    "static/css/main.74432b2c.css",
-    "static/js/main.fa053960.js"
+    "static/css/main.52a242b2.css",
+    "static/js/main.dce67420.js"
   ]
 }
