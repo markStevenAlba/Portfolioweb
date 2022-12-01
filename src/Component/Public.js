@@ -58,10 +58,11 @@ const App = () => {
       myPath = localPath;
     }
 
-    handleGetContent(myPath);
-    // let profile = PROFILES.find(a => a.username === myPath);
+    let profile = PROFILES.find(a => a.username === myPath);
 
-    // setValues(profile)
+    setValues({...values, ...profile})
+    handleGetContent(myPath);
+
     
   }, [])
 
@@ -70,7 +71,7 @@ const App = () => {
   useEffect(() => {
       console.log(content)
     if(content._id){
-      setValues(content)
+      setValues({...values, ...content})
     }
 
   },[content])

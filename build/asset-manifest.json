@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.47026c90.css",
-    "main.js": "/static/js/main.1998e230.js",
+    "main.css": "/static/css/main.74432b2c.css",
+    "main.js": "/static/js/main.fa053960.js",
     "static/media/netflix.png": "/static/media/netflix.782ca1e7088576586960.png",
     "static/media/john-geli-CV.pdf": "/static/media/john-geli-CV.f7f3dac913ba4f1c5ccc.pdf",
     "static/media/doovote.png": "/static/media/doovote.f5106c0f36e64df6308e.png",
@@ -18,17 +18,16 @@
     "static/media/testimonial2.png": "/static/media/testimonial2.39a53f7f092f07f5bceb.png",
     "static/media/work4.jpg": "/static/media/work4.aee985961b648f4df1f2.jpg",
     "static/media/work5.jpg": "/static/media/work5.094ec4a2224db8908873.jpg",
-    "static/media/one_piece_logo.jpg": "/static/media/one_piece_logo.4f86eb018badb2ccf948.jpg",
     "static/media/work1.jpg": "/static/media/work1.321b4ae3bf404acdfdc6.jpg",
     "static/media/work3.jpg": "/static/media/work3.135e9065694bc13dc31d.jpg",
     "static/media/testimonial1.png": "/static/media/testimonial1.89079c1d25f2c94ceb89.png",
     "static/media/John-Cv.pdf": "/static/media/John-Cv.e83747cf513e0b21a7f1.pdf",
     "index.html": "/index.html",
-    "main.47026c90.css.map": "/static/css/main.47026c90.css.map",
-    "main.1998e230.js.map": "/static/js/main.1998e230.js.map"
+    "main.74432b2c.css.map": "/static/css/main.74432b2c.css.map",
+    "main.fa053960.js.map": "/static/js/main.fa053960.js.map"
   },
   "entrypoints": [
-    "static/css/main.47026c90.css",
-    "static/js/main.1998e230.js"
+    "static/css/main.74432b2c.css",
+    "static/js/main.fa053960.js"
   ]
 }
