@@ -68,7 +68,7 @@ const App = () => {
       <About data={values}/>
       <Skills data={values}/>
       <Services />
-      {/* <Qualification/> */}
+      <Qualification/>
       <Work data={values}/>
       <Testimonials/>
       <Contact data={values} />
