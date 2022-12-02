@@ -8,25 +8,15 @@ import Info from './Info';
 const About = ({data}) => {
     const [values, setValues] = useState({});
 
-
-
-
-
   useEffect(() => {
     let { contents } = data;
     let about = {};
     
-    
     if(contents && contents.length !== 0){
       about = contents.find(a => a.type === 'about');
     }
-
-
-
-
     setValues(about);
   }, [data])
-
 
   console.log(values)
 

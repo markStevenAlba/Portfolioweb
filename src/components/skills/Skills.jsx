@@ -17,14 +17,9 @@ const Skills = ({data = {}}) => {
   const [backEnd, setBE] = useState({});
 
 
-
-
-
-
   useEffect(() => {
     let { contents } = data;
     let about = {};
-    
     
     if(contents && contents.length !== 0){
       about = contents.find(a => a.type === 'skills');

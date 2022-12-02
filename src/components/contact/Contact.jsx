@@ -46,7 +46,7 @@ const Contact = ({data}) => {
   return (
     <section className="contact section" id="contact">
       <h2 className="section__title">Get in touch</h2>
-      <span className="section__subtitle">Contact Me</span>
+      <span className="section__subtitle">Contact Me{""}☎</span>
 
       <div className="contact__container container grid">
         <div className="contact__content">
@@ -82,7 +82,6 @@ const Contact = ({data}) => {
                      <span className="contact__card-data">{a.subtitle}</span>
                      
                      <a href={a.link}
-                      // target="_blank"
                        className="contact__button">
                        Write Me{" "}
                          <i className="bx bx-right-arrow-alt

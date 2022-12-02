@@ -23,7 +23,6 @@ export const API_URL = "https://docampaign.online/v1";
 //Local
 // export const API_URL = "http://localhost:5004/v1";
 
-
 export const PROJECTS = [
     {
       id: 1,
@@ -334,10 +333,10 @@ export const PROFILES = [
         email: "jezedevkiel21@gmail.com",
         profile: {
             cover: "",
-            nickname: "jezekiel",
+            nickname: "jeff",
             firstName: "Jezekiel",
             lastName: "Isip",
-            position: "Backend Developer",
+            position: "FullStack Developer",
             bio: "I'm creative developer based in Tacloban City, Philippines, and I'm very passionate and dedicated to my work.",
         },    
         contents: [
