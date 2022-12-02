@@ -14,7 +14,7 @@ package-lock.json
 # /build
 
 
-src/commonData.js
+# src/commonData.js
 
 # misc
 .DS_Store
