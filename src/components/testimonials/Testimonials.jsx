@@ -9,26 +9,23 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 const Testimonials = ({data}) => {
-  const [values, setValues] = useState([]);
+  const [values, setValues] = useState({
+    contents: []
+  });
+
 
   useEffect(() => {
-    let { contents } = data;
-    let testimonial = {};
-    
-    if(contents && contents.length !== 0){
-      testimonial = contents.find(a => a.type === 'testimonial');
-      if(testimonial){
-        setValues(testimonial.contents)
-      }
-    }
+        setValues(data);
   }, [data])
 
 
-  console.log(values)
+
   return (
-      <section className="testimonial container section">
-        <h2 className="section__title">{data.title}</h2>
-        <span className="section__subtitle">{data.subtitle}</span>
+      <section className="testimonial container section" 
+      id="testimonial"
+      >
+        <h2 className="section__title">{values.title}</h2>
+        <span className="section__subtitle">{values.subtitle}</span>
     
         <Swiper className="testimonial_container"
             loop={true}
@@ -39,19 +36,19 @@ const Testimonials = ({data}) => {
             }}
             breakpoints={{
               576: {
-                slidesPerView: 2
+                slidesPerView: 1
               },
               768: {
-                slidesPerView: 2,
-                spaceBetween: 48,
+                slidesPerView: 1,
+                spaceBetween: 25,
               }
-            }}
+            }} 
             modules={[Pagination]}
         >
-    {values.map(({id, image, title, description }) => {
+    {values.contents.map(({id, cover, title, description }, index) => {
       return (
-          <SwiperSlide className="testimonial__card" key={id}>
-            <img src={image} alt="" 
+          <SwiperSlide className="testimonial__card" key={index}>
+            <img src={cover} alt="" 
             className="testimonial__img" />
   
             <h3 className="testimonial__name">{title}</h3>

@@ -17,31 +17,29 @@ const Skills = ({data = {}}) => {
   const [backEnd, setBE] = useState({});
 
 
-
+  
 
 
 
   useEffect(() => {
     let { contents } = data;
-    let about = {};
     
     
-    if(contents && contents.length !== 0){
-      about = contents.find(a => a.type === 'skills');
-      if(about){
-        let fe = about.contents.find(a => a.description === 'frontend');
-        let be = about.contents.find(a => a.description === 'backend');
-        if(about.contents && about.contents.length !== 0){
-        setFE(fe);
-        setBE(be)
-      }
-      }
+    if(contents){
+        let fe = contents.find(a => a.description === 'frontend');
+        let be = contents.find(a => a.description === 'backend');
+        if(fe){
+          setFE(fe);
+        }
+        if(be){
+          setBE(be)
+        }
     }
 
 
 
 
-    setValues(about);
+    setValues(data);
   }, [data])
 
   return (
@@ -76,7 +74,7 @@ const Skills = ({data = {}}) => {
         <Backend />
         </SwiperSlide>
         </Swiper> */}
-      <div className="skills__container container">
+      <div className="skills__container  container">
       <div className="skills__content">
       <Frontend data={frontEnd} />
 

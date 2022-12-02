@@ -14,36 +14,24 @@ const Qualification = ({data}) => {
   useEffect(() => {
     let { contents } = data;
     let qualification = {};
-    
-    
-    if(contents && contents.length !== 0){
-      qualification = contents.find(a => a.type === 'qualification');
-      let qContents = qualification.contents;
-
+    if(contents){
+      let qContents = contents;
       if(qContents && qContents.length !== 0){
-
-
         let edu = qContents.filter(a => a.type === 'education');
-        
         let exp = qContents.filter(a => a.type === 'experience');
-
-
-
         setEducation(edu);
         setExperience(exp)
-
-
-
-
       }
     
     }
 
-    setValues(qualification)
+    setValues(data)
   }, [data])
 
   return (
-    <section className="qualification section">
+    <section className="qualification section" 
+    id="qualification"
+    >
       <h2 className="section__title">{values.title}</h2>
       <span className="section__subtitle">{values.subtitle}</span>
       <div className="qualification__container container">
@@ -84,7 +72,7 @@ const Qualification = ({data}) => {
           >
      {education.map((a, index) => {
               return (
-                <div className="qualification__data">
+                <div className="qualification__data" key={index}>
                    {index % 2!=0 && ( <>  <div></div>  <div>
                 <span className="qualification__rounder"></span>
                 <span className="qualification__line "></span>
@@ -118,7 +106,7 @@ const Qualification = ({data}) => {
           >
             {experience.map((a, index) => {
               return (
-                <div className="qualification__data">
+                <div className="qualification__data" key={index}>
                    {index % 2==0 && ( <>  <div></div>  <div>
                 <span className="qualification__rounder"></span>
                 <span className="qualification__line "></span>

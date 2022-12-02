@@ -11,13 +11,13 @@ import { Pagination } from "swiper";
 
 import "./contact.css";
 import { useDispatch } from 'react-redux';
+import { isFocusable } from '@testing-library/user-event/dist/utils/index.js';
 
 const Contact = ({data}) => {
 
   const dispatch = useDispatch();
   const [contacts, setContacts] = useState([]);
   const [values, setValues] = useState({});
-  const form = useRef(); 
 
   const handleChanges = prop => event => {
     setValues({...values, [prop]: event.target.value})
@@ -32,21 +32,15 @@ const Contact = ({data}) => {
 
   useEffect(() => {
     let { contents } = data;
-
-    let contactMe = [];
-
-    if(contents && contents.length !== 0){ 
-    contactMe = contents.find(a => a.type === 'contact');
+    if(contents){
+      setContacts(contents);
     }
-  
-      setContacts(contactMe.contents);
-
   }, [data])
 
   return (
     <section className="contact section" id="contact">
-      <h2 className="section__title">Get in touch</h2>
-      <span className="section__subtitle">Contact Me</span>
+      <h2 className="section__title">{data.title}</h2>
+      <span className="section__subtitle">{data.subtitle}</span>
 
       <div className="contact__container container grid">
         <div className="contact__content">

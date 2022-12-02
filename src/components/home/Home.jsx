@@ -4,25 +4,21 @@ import Social from './Social';
 import Data from './Data'
 import ScrollDown from './ScrollDown';
 
-const Home = ({data = { contents: [], profile: {} }}) => {
-  const [socials, setSocials] = useState([]);
+const Home = ({profile, socials}) => {
+  const [profileSocials, setSocials] = useState([]);
   const [accountProfile, setProfile] = useState({});
 
   useEffect(() => {
-    let { contents, profile } = data;
 
-    let socialLinks = [];
-
-    if(contents && contents.length !== 0){ 
-    socialLinks = contents.find(a => a.type === 'socials');
-    }
 
     if(profile){
       setProfile(profile)
     }
 
-    setSocials(socialLinks.contents ? socialLinks.contents : [])
-  }, [data])
+    if(socials && socials.contents){
+      setSocials(socials.contents)
+    }
+  }, [profile, socials])
 
   return (
     <section className="home section" id="home">
@@ -35,7 +31,7 @@ const Home = ({data = { contents: [], profile: {} }}) => {
                 className= "home__img" 
                 ></div>
 
-             <Social data={socials} />
+             <Social data={profileSocials} />
              <Data data={accountProfile}/>
         </div>
 

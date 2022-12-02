@@ -91,10 +91,11 @@ export function getContentById (data) {
 export function getContent (id) {
 
     return dispatch => {
-      return axios.get(`${API_URL}/contents/profile/${id}`)
+      return axios.get(`${API_URL}/profile/${id}`)
             .then(({data, status}) => {
                 console.log(data)
-                    if(status === 200) {
+                    if(status === 200 && data.username) {
+                        console.log(data)
                         dispatch({type: 'SET_CONTENT', payload: data});
                     }
                     return data

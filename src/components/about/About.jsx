@@ -13,23 +13,16 @@ const About = ({data}) => {
 
 
   useEffect(() => {
-    let { contents } = data;
-    let about = {};
-    
-    
-    if(contents && contents.length !== 0){
-      about = contents.find(a => a.type === 'about');
-    }
-
-
-
-
-    setValues(about);
+    setValues(data);
   }, [data])
 
+  
+  console.log(data)
 
   return (
-    <section className="about section" id="about">
+    <section className="about section" 
+    id="about"
+    >
       <h2 className="section__title">{values.title}</h2>
       <span className="section__subtitle">{values.subtitle}</span>
 

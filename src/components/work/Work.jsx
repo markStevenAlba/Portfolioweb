@@ -6,17 +6,10 @@ const Work = ({data}) => {
     const [values, setValues] = useState([]);
 
     useEffect(() => {
-        let { contents, profile } = data;
-
-        let works = [];
-
-        if(contents && contents.length !== 0) {
-            let work = contents.find(a => a.type === 'works');
-            works = work.contents;
+        let { contents } = data;
+        if(contents) {
+        setValues(contents)
         }
-
-        setValues(works)
-
     }, [data])
 
 

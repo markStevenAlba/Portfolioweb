@@ -32,12 +32,6 @@ export const Testimonial = [
     image: Image1,
     title:"Aja Hardware",
     description: "A really good job, a aspects of the project were followed step by step and with good results."
-  },
-  {
-    id: 2,
-    image: Image2,
-    title:"",
-    description: ""
   }
 
   // {

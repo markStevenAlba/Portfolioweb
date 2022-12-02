@@ -20,9 +20,9 @@ const Frontend = ({data = {}}) => {
 
 let middle = Math.floor(values.length / 2);
 
-let left = values.slice(0, middle).map(a => {
+let left = values.slice(0, middle).map((a, index) => {
   return (
-    <div className="skills__data">
+    <div className="skills__data" key={index}>
     <i className={a.icon}></i>
     <div>
         <h3 className="skills__name">{a.title}</h3>
@@ -33,9 +33,9 @@ let left = values.slice(0, middle).map(a => {
 });
 
 
-let right = values.slice(middle).map(a => {
+let right = values.slice(middle).map((a, index) => {
   return (
-    <div className="skills__data">
+    <div className="skills__data" key={index}>
     <i className={a.icon}></i>
     <div>
         <h3 className="skills__name">{a.title}</h3>

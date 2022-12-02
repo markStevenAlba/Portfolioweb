@@ -22,15 +22,15 @@ const App = () => {
   const dispatch = useDispatch();
   const { isAuth } = useSelector(a => a.auth);
   const { content } = useSelector(a => a.data);
-  const [values, setValues] = useState({})
 
+  const [values, setValues] = useState({})
   const handleGetContent = (val) => {
         dispatch(getContent(val));
   }
 
   useEffect(() => {
     const pathname = window.location.pathname;
-    let myPath = 'jaybeegeli';
+    let myPath = '';
     var ret = pathname.replace('/profile','');
   
     if(ret){
@@ -54,23 +54,26 @@ const App = () => {
   
 
   useEffect(() => {
-    if(content._id){
-      setValues({...values, ...content})
+    if(content.username){
+      setValues(content)
     }
   },[content])
 
+  let { about, socials, skills, services, qualification, testimonial, works, contact, profile } = values
   return (
     <>
     <Header data={values} />
     <main className="main">
-      <Home data={values}/>
-      <About data={values}/>
-      <Skills data={values}/>
-      <Services />
-      <Qualification data={values}/>
-      <Work data={values}/>
-      <Testimonials data={values}/>
-      <Contact data={values} />
+      <Home socials={socials}
+        profile={profile}
+      />
+      <About data={about ? about : {}}/>
+    {skills && skills.contents.length !== 0 &&  <Skills data={skills ? skills : {}}/>}
+    {services && services.contents.length !== 0 &&  <Services data={services ? services : {}}/> }
+    {qualification && qualification.contents.length !== 0 &&   <Qualification data={qualification ? qualification : {}}/> }
+    {works && works.contents.length !== 0 &&  <Work data={works ? works : {}}/> }
+    {testimonial && testimonial.contents.length !== 0 &&  <Testimonials data={testimonial? testimonial: {}}/> }
+    {contact && contact.contents.length !== 0 &&  <Contact data={contact ? contact : {}} /> }
     </main>
       <Footer/>
       <ScrollUp />

@@ -1,38 +1,23 @@
 [
   {
-    "type": "education",
-    "title": "Rizal Central School",
-    "subtitle": "Tacloban City",
-    "description": "2005 - 2010",
+    "title":"Frontend Development",
+    "description":
+    "From the start of the project, through to completion, Warren supported us and exceeded our expectations in every way",
+    "icon": "uil uil-web-grid"
+  },
+
+  {
+    "title": "Backend Development",
+    "description":
+    "Very helpful when building my website, I now have my ecommerce store built from scratch",
+    "icon": "uil uil-arrow"
+
   },
   {
-    "type": "education",
-    "title": "Leyte National High School",
-    "subtitle": "Tacloban City",
-    "description": "2010 - 2014",
+    "title": "Data Analytics",
+    "description":
+    "Not only was our experience personal and friendly, his ability to identify and present our key messages in an imaginative and creative way gave us a huge amount of confidence in him",
+    "icon": "uil uil-chart"
   },
-  {
-    "type": "education",
-    "title": "Asian Development Foundation College",
-    "subtitle": "Tacloban City",
-    "description": "2014 - 2020",
-  },
-  {
-    "type": "experience",
-    "title": "Full Stack Developer",
-    "subtitle": "IT Matters - Tacloban City",
-    "description": "2018 - 2020",
-  },
-  {
-    "type": "experience",
-    "title": "Full Stack Developer",
-    "subtitle": "PruLife Uk - BGC, Taguig",
-    "description": "2021 - 2022",
-  },
-  {
-    "type": "experience",
-    "title": "Software Engineer",
-    "subtitle": "Cloud Panda PH - BGC, Taguig",
-    "description": "2022 - 2022",
-  }
+  
 ]

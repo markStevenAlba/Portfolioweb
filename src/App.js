@@ -9,20 +9,20 @@ import jwtDecode from 'jwt-decode';
 
 import store from './Redux/store';
 
-import {logout, getUserData} from "./Redux/Actions/authAction";
+// import {logout, getUserData} from "./Redux/Actions/authAction";
 
 
-const token = localStorage.idToken;
+// const token = localStorage.idToken;
 
-if (token) {
-  const decodedToken = jwtDecode(token);
-  if (decodedToken.exp * 1000 < Date.now()) {
-    store.dispatch(logout());
-    window.location.href = "/";
-  } else {
-    store.dispatch(getUserData());
-  }
-}
+// if (token) {
+//   const decodedToken = jwtDecode(token);
+//   if (decodedToken.exp * 1000 < Date.now()) {
+//     store.dispatch(logout());
+//     window.location.href = "/";
+//   } else {
+//     store.dispatch(getUserData());
+//   }
+// }
 
 function App() {
   // const { isAuth } = useSelector(a => a.auth);
