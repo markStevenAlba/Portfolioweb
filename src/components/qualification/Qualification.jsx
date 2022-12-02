@@ -69,7 +69,7 @@ const Qualification = ({data}) => {
             onClick={() => toggleTab(2)}
           >
             &nbsp;{" "}
-            <i className="uil uil-graduation-cap qualification__icon"></i>
+            <i className="uil uil-briefcase-alt qualification__icon"></i>
             {"  "}&nbsp;Experience&nbsp;
           </div>
         </div>
