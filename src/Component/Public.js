@@ -30,7 +30,7 @@ const App = () => {
 
   useEffect(() => {
     const pathname = window.location.pathname;
-    let myPath = '';
+    let myPath = 'jaybeegeli';
     var ret = pathname.replace('/profile','');
   
     if(ret){
