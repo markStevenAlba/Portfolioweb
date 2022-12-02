@@ -19,7 +19,9 @@ const Info = ({data}) => {
     } 
 
   }, [data])
-  console.log(values.length)
+
+
+
   return (
     <div
      className="about__info"

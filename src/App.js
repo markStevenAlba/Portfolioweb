@@ -31,83 +31,26 @@ function App() {
     <Provider store={store}>
       <div className="App">
         <Router>
-        {/* <div>
-          <p><Link to="/public">public</Link></p>
-          <p><Link to="/data">Data</Link></p>
-          <p><Link to="/private">private</Link></p> */}
             <Switch>
-  
-  {/* <Route
-    exact
-    path="/admin"
-    render={() => <Redirect to="/admin/dashboard" />}
-  /> */}
-  
-
-  {/* <PrivateRoute path="/" component={Layout} /> */}
-
-  {/* <PublicRoute path="/login" component={Login} /> */}
-  {/* <PublicRoute path="/signup" component={Signup} /> */}
-  {/* <PrivateRoute path="/admin" component={AdminLayout} /> */}
-  {/* <PrivateRoute path="/admin" component={TestLayout} /> */}
-
-  {/* <PrivateRoute
-    exact
-    path="/"
-    component={Public}
-  />   */}
-    
   <PrivateRoute
     path="/login"
     component={Login}
   />  
-
      <Route
     exact
     path="/"
     render={() => <Redirect to="/profile" />}
   /> 
-
-  
-
   <Route
-    // exact
     path="/profile"
     component={Public}
   />  
-
- 
-  
   <Route component={Error} />
 </Switch>
-        {/* </div> */}
       </Router>
       </div>
       </Provider>
   );
-
-  // function PrivateRoute({ component, ...rest }) {
-  //   return (
-  //     <Route
-  //       {...rest}
-  //       render={props =>
-  //         isAuth ? (
-  //           React.createElement(component, props)
-  //         ) : (
-  //           <Redirect
-  //             to={{
-  //               pathname: "/login",
-  //               state: {
-  //                 from: props.location,
-  //               },
-  //             }}
-  //           />
-  //         )
-  //       }
-  //     />
-  //   );
-  // }
-
 }
 
 export default App;

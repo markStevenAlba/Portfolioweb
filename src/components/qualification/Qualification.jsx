@@ -7,7 +7,6 @@ const Qualification = ({data}) => {
   const [education, setEducation] = useState([]);
   const [experience, setExperience] = useState([]);
 
-
   const toggleTab = (index) => {
     setToggleState(index);
   };
@@ -43,16 +42,10 @@ const Qualification = ({data}) => {
     setValues(qualification)
   }, [data])
 
-
-  console.log(education)
-  console.log(experience)
-
-
   return (
     <section className="qualification section">
       <h2 className="section__title">{values.title}</h2>
       <span className="section__subtitle">{values.subtitle}</span>
-
       <div className="qualification__container container">
         <div className="qualification__tabs">
           <div
@@ -80,7 +73,6 @@ const Qualification = ({data}) => {
             {"  "}&nbsp;Experience&nbsp;
           </div>
         </div>
-
         <div className="qualification__sections container">
           {/* EDUCATION */}
           <div
@@ -91,7 +83,6 @@ const Qualification = ({data}) => {
             }
           >
      {education.map((a, index) => {
-              console.log(index % 2==0)
               return (
                 <div className="qualification__data">
                    {index % 2!=0 && ( <>  <div></div>  <div>
@@ -126,7 +117,6 @@ const Qualification = ({data}) => {
             }
           >
             {experience.map((a, index) => {
-              console.log(index % 2==0)
               return (
                 <div className="qualification__data">
                    {index % 2==0 && ( <>  <div></div>  <div>

@@ -36,10 +36,8 @@ const App = () => {
     if(ret){
       ret = ret.split('/')[1].split('#')[0];
     }
-    console.log(ret)
     let localPath = localStorage.getItem('profile');
     if(ret){
-      console.log('sulod myda')
       myPath = ret;
       localStorage.setItem('profile', myPath);
     }
@@ -47,7 +45,6 @@ const App = () => {
 
 
     if(localPath){
-      console.log('sulod myda local')
       myPath = localPath;
     }
     let profile = PROFILES.find(a => a.username === myPath);
@@ -57,7 +54,6 @@ const App = () => {
   
 
   useEffect(() => {
-      console.log(content)
     if(content._id){
       setValues({...values, ...content})
     }

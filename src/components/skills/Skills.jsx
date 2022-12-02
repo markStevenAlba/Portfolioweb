@@ -44,8 +44,6 @@ const Skills = ({data = {}}) => {
     setValues(about);
   }, [data])
 
-  console.log(frontEnd)
-  console.log(backEnd)
   return (
     <section className="skills section" id="skills">
       <h2 className="section__title">{values.title}</h2>

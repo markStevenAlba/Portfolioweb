@@ -28,8 +28,6 @@ const About = ({data}) => {
   }, [data])
 
 
-  console.log(values)
-
   return (
     <section className="about section" id="about">
       <h2 className="section__title">{values.title}</h2>
