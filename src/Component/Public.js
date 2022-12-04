@@ -37,16 +37,19 @@ const App = () => {
       ret = ret.split('/')[1].split('#')[0];
     }
     let localPath = localStorage.getItem('profile');
+
+
     if(ret){
       myPath = ret;
       localStorage.setItem('profile', myPath);
+    } else {
+      if(localPath){
+        myPath = localPath;
+      }
     }
 
 
 
-    if(localPath){
-      myPath = localPath;
-    }
     let profile = PROFILES.find(a => a.username === myPath);
     setValues({...values, ...profile})
     handleGetContent(myPath);

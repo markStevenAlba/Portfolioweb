@@ -84,7 +84,7 @@ const Qualification = ({data}) => {
                    {a.subtitle}
                   </span>
                   <div className="qualification__calender">
-                    <i className="uil uil-calendar-alt"></i> {a.description}
+                  <span className="qualification__subtitle"> <i className="uil uil-calendar-alt"></i> {a.description}</span>
                   </div>
                 </div>
                 {index % 2==0 && (   <div>
@@ -118,7 +118,7 @@ const Qualification = ({data}) => {
                    {a.subtitle}
                   </span>
                   <div className="qualification__calender">
-                    <i className="uil uil-calendar-alt"></i> {a.description}
+                    <i className="uil uil-calendar-alt"></i> <span className="qualification__subtitle">{a.description}</span>
                   </div>
                 </div>
                 {index % 2!=0 && (   <div>
