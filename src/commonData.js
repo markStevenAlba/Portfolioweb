@@ -17,7 +17,7 @@ import Messaging from "./assets/Messaging.png";
 import CV from "./assets/john-geli-CV.pdf";
 
 //Dev
-export const API_URL = "https://docampaign.online/v1";
+export const API_URL = "https://solidbbm.online.online/v1";
 
 //Local
 // export const API_URL = "http://localhost:5004/v1";
