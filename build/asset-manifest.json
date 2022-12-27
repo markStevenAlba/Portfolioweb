@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.5bc01804.css",
-    "main.js": "/static/js/main.eee86579.js",
+    "main.js": "/static/js/main.b9ce9931.js",
     "static/media/netflix.png": "/static/media/netflix.782ca1e7088576586960.png",
     "static/media/raymund.jpg": "/static/media/raymund.46bbc28c348fbe490eb5.jpg",
     "static/media/john-geli-CV.pdf": "/static/media/john-geli-CV.f7f3dac913ba4f1c5ccc.pdf",
@@ -26,10 +26,10 @@
     "static/media/John-Cv.pdf": "/static/media/John-Cv.e83747cf513e0b21a7f1.pdf",
     "index.html": "/index.html",
     "main.5bc01804.css.map": "/static/css/main.5bc01804.css.map",
-    "main.eee86579.js.map": "/static/js/main.eee86579.js.map"
+    "main.b9ce9931.js.map": "/static/js/main.b9ce9931.js.map"
   },
   "entrypoints": [
     "static/css/main.5bc01804.css",
-    "static/js/main.eee86579.js"
+    "static/js/main.b9ce9931.js"
   ]
 }
