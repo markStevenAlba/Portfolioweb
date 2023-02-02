@@ -7,7 +7,7 @@ import Doovote from "./assets/doovote.png";
 import Netflix from "./assets/netflix.png";
 import Dashboard from "./assets/Dashboard.png";
 import Pos from "./assets/Pos.png";
-import Meet from "./assets/Meet.png";
+import CFC from "./assets/CFC.png";
 import Blog from "./assets/Blog.png";
 import Inventory from "./assets/Inventory.png";
 import Ecommerce from "./assets/Ecommerce.png";
@@ -32,10 +32,10 @@ export const PROJECTS = [
     },
     {
       id: 2,
-      cover: Meet,
-      title: "Meet",
+      cover: CFC,
+      title: "CFC 2023",
       description: "App",
-      link: "/meet"
+      link: "https://cfc2023.online"
     },
     {
       id: 3,
@@ -197,7 +197,7 @@ export const PROFILES = [
             firstName: "John Benedict",
             lastName: "Geli",
             position: "Software Engineer",
-            bio: "I'm creative software developer based in Tacloban City, Philippines, with a passion for creating innovative tools and systems. I have a background in accounting and a solid foundation in Full Stack Development, including expertise in HTML, CSS, JavaScript, React, Node.js and Databases.",
+            bio: "I'm a creative software developer based in Tacloban City, Philippines, with a passion for creating innovative tools and systems. I have a background in accounting and a solid foundation in Full Stack Development, including expertise in HTML, CSS, JavaScript, React, Node.js and Databases.",
         },    
          contents: [
             {
@@ -268,7 +268,7 @@ export const PROFILES = [
                 subtitle: "My Introduction",
                 description: "I believe that my unique combination of accounting knowledge and Full Stack Development skills allows me to bring added value to any project. My goal is to use my expertise to create cutting-edge accounting tools and systems that streamline financial processes and improve the user experience.",
                 link: CV,
-                cover: "",
+                cover: "https://bugtech-portfolio.s3.ap-northeast-1.amazonaws.com/Untitled.png",
                 contents: [
                     {
                         title: "Experience",
@@ -325,7 +325,34 @@ export const PROFILES = [
             link: "",
             cover: "",
             contents: []
-        }
+        },{
+          type: "qualification",
+          title: "Qualification",
+          subtitle: "My personal journey",
+          description: "",
+          link: "",
+          cover: "",
+          contents: [
+            {
+              type: "education",
+              title: "ASIAN DEVELOPMENT FOUNDATION COLLEGE",
+              subtitle: "Accountancy Graduate - Tertiary",
+              description: "2015-2020",
+              link: "",
+              cover: "",
+              contents: []
+            },
+            {
+              type: "experience",
+              title: "Experience",
+              subtitle: "",
+              description: "",
+              link: "",
+              cover: "",
+              contents: []
+            }
+          ]
+      }
         ]
     },{
         username: "jezekielisip",

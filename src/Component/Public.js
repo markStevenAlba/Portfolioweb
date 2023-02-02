@@ -55,9 +55,16 @@ const App = () => {
     let services = profile.contents.find(a => a.type === 'services');
     let skills = profile.contents.find(a => a.type === 'skills');
     let about = profile.contents.find(a => a.type === 'about');
+
+    let contact = profile.contents.find(a => a.type === 'contact');
+
+
+    let qualification = profile.contents.find(a => a.type === 'qualification');
+
+    let works = profile.contents.find(a => a.type === 'works');
     
     console.log(profile)
-    setValues({...values, ...profile, socials, services, skills, about})
+    setValues({...values, ...profile, socials, services, skills, about, contact, qualification, works })
     dispatch({type: 'SET_CONTENT', payload: profile});
     
     // handleGetContent(myPath);
