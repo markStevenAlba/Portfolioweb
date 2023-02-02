@@ -17,10 +17,10 @@ import Messaging from "./assets/Messaging.png";
 import CV from "./assets/john-geli-CV.pdf";
 
 //Dev
-export const API_URL = "https://solidbbm.online/v1";
+export const API_URL = "https://bugtech.solutions/v1";
 
 //Local
-// export const API_URL = "http://localhost:5004/v1";
+// export const API_URL = "http://localhost:5500/v1";
 
 export const PROJECTS = [
     {
@@ -192,7 +192,7 @@ export const PROFILES = [
         username: "jaybeegeli",
         email: "jb@yahoo.com",
         profile: {
-            cover: "",
+            cover: "https://bugtech-portfolio.s3.ap-northeast-1.amazonaws.com/Untitled.png",
             nickname: "jaybee",
             firstName: "John Benedict",
             lastName: "Geli",
@@ -216,7 +216,7 @@ export const PROFILES = [
                         title: "",
                         subtitle: "",
                         description: "",
-                        link: "https://linkedin.com/in/john-benedict-geli-16941a21a",
+                        link: "www.linkedin.com/in/john-benedict-geli",
                         icon: "uil uil-linkedin",
                       },
                       {
