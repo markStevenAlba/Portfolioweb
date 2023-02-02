@@ -51,16 +51,26 @@ const App = () => {
 
 
     let profile = PROFILES.find(a => a.username === myPath);
-    setValues({...values, ...profile})
-    handleGetContent(myPath);
+    let socials = profile.contents.find(a => a.type === 'socials');
+    let services = profile.contents.find(a => a.type === 'services');
+    let skills = profile.contents.find(a => a.type === 'skills');
+    let about = profile.contents.find(a => a.type === 'about');
+    
+    console.log(profile)
+    setValues({...values, ...profile, socials, services, skills, about})
+    dispatch({type: 'SET_CONTENT', payload: profile});
+    
+    // handleGetContent(myPath);
   }, [])
   
 
-  useEffect(() => {
-    if(content.username){
-      setValues(content)
-    }
-  },[content])
+  // useEffect(() => {
+  //   if(content.username){
+  //     setValues(content)
+  //   }
+  // },[content])
+
+
 
   let { about, socials, skills, services, qualification, testimonial, works, contact, profile } = values
   return (

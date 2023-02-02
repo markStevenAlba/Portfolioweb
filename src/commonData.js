@@ -197,7 +197,7 @@ export const PROFILES = [
             firstName: "John Benedict",
             lastName: "Geli",
             position: "Software Engineer",
-            bio: "I'm creative software developer based in Tacloban City, Philippines, and I'm very passionate and dedicated to my work.",
+            bio: "I'm creative software developer based in Tacloban City, Philippines, with a passion for creating innovative tools and systems. I have a background in accounting and a solid foundation in Full Stack Development, including expertise in HTML, CSS, JavaScript, React, Node.js and Databases.",
         },    
          contents: [
             {
@@ -216,7 +216,7 @@ export const PROFILES = [
                         title: "",
                         subtitle: "",
                         description: "",
-                        link: "www.linkedin.com/in/john-benedict-geli",
+                        link: "https://www.linkedin.com/in/john-benedict-geli",
                         icon: "uil uil-linkedin",
                       },
                       {
@@ -266,7 +266,7 @@ export const PROFILES = [
                 type: "about",
                 title: "About Me",
                 subtitle: "My Introduction",
-                description: "Frontend developer, I create web pages with UI / UX user interface, I have years of experience and many clients are happy with the projects carried out.",
+                description: "I believe that my unique combination of accounting knowledge and Full Stack Development skills allows me to bring added value to any project. My goal is to use my expertise to create cutting-edge accounting tools and systems that streamline financial processes and improve the user experience.",
                 link: CV,
                 cover: "",
                 contents: [
@@ -286,7 +286,7 @@ export const PROFILES = [
                       },
                       {
                         title: "Support",
-                        subtitle: "Online 20/5",
+                        subtitle: "Online 24/7",
                         description: "",
                         link: "",
                         icon: "bx bx-support",
