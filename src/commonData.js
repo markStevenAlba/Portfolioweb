@@ -63,7 +63,7 @@ export const PROJECTS = [
       cover: Inventory,
       title: "Inventory Management",
       description: "App",
-      link: "/inventory"
+      link: "https://pos.bugtech.solutions"
     },
     // {
     //   id: 7,
