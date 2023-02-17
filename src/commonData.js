@@ -26,9 +26,9 @@ export const PROJECTS = [
     {
       id: 1,
       cover: Pos,
-      title: "POS",
+      title: "Inventory/POS",
       description: "Web",
-      link: "/pos"
+      link: "https://pos.bugtech.solutions"
     },
     {
       id: 2,
