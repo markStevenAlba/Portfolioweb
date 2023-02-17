@@ -65,27 +65,27 @@ export const PROJECTS = [
       description: "App",
       link: "/inventory"
     },
-    {
-      id: 7,
-      cover: Blog,
-      title: "Blog Web Site",
-      description: "Web",
-      link: "/blog"
-    },
-    {
-      id: 8,
-      cover: Ecommerce,
-      title: "Ecommerce Web",
-      description: "Design",
-      link: "/ecommerce"
-    },
-    {
-      id: 9,
-      cover: Messaging,
-      title: "Messaging Web App",
-      description: "App",
-      link: "/messaging"
-    },
+    // {
+    //   id: 7,
+    //   cover: Blog,
+    //   title: "Blog Web Site",
+    //   description: "Web",
+    //   link: "/blog"
+    // },
+    // {
+    //   id: 8,
+    //   cover: Ecommerce,
+    //   title: "Ecommerce Web",
+    //   description: "Design",
+    //   link: "/ecommerce"
+    // },
+    // {
+    //   id: 9,
+    //   cover: Messaging,
+    //   title: "Messaging Web App",
+    //   description: "App",
+    //   link: "/messaging"
+    // },
 ];
 
 export const SKILLS = [
