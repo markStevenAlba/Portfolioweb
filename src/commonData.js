@@ -14,7 +14,7 @@ import Ecommerce from "./assets/Ecommerce.png";
 import Messaging from "./assets/Messaging.png";
 
 
-import CV from "./assets/john-geli-CV.pdf";
+import CV from "./assets/John_Benedict_CV.pdf";
 
 //Dev
 export const API_URL = "https://bugtech.solutions/v1";
