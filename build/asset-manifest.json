@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.5bc01804.css",
-    "main.js": "/static/js/main.b9ce9931.js",
+    "main.js": "/static/js/main.cbdc42ec.js",
     "static/media/netflix.png": "/static/media/netflix.782ca1e7088576586960.png",
     "static/media/raymund.jpg": "/static/media/raymund.46bbc28c348fbe490eb5.jpg",
-    "static/media/john-geli-CV.pdf": "/static/media/john-geli-CV.f7f3dac913ba4f1c5ccc.pdf",
     "static/media/doovote.png": "/static/media/doovote.f5106c0f36e64df6308e.png",
     "static/media/Ecommerce.png": "/static/media/Ecommerce.d971b01b304243bf99de.png",
     "static/media/Blog.png": "/static/media/Blog.b685bd3685e1b6f09982.png",
+    "static/media/CFC.png": "/static/media/CFC.754ccf8fb8a83941a2e6.png",
+    "static/media/John_Benedict_CV.pdf": "/static/media/John_Benedict_CV.d66079247790ca395b17.pdf",
     "static/media/mandrix.jpg": "/static/media/mandrix.eeb51a034b0c577362cd.jpg",
     "static/media/Dashboard.png": "/static/media/Dashboard.944dc1acb6df609e5d84.png",
     "static/media/Messaging.png": "/static/media/Messaging.1d4d224e2bade73fa884.png",
@@ -26,10 +27,10 @@
     "static/media/John-Cv.pdf": "/static/media/John-Cv.e83747cf513e0b21a7f1.pdf",
     "index.html": "/index.html",
     "main.5bc01804.css.map": "/static/css/main.5bc01804.css.map",
-    "main.b9ce9931.js.map": "/static/js/main.b9ce9931.js.map"
+    "main.cbdc42ec.js.map": "/static/js/main.cbdc42ec.js.map"
   },
   "entrypoints": [
     "static/css/main.5bc01804.css",
-    "static/js/main.b9ce9931.js"
+    "static/js/main.cbdc42ec.js"
   ]
 }
