@@ -12,7 +12,7 @@ import Blog from "./assets/Blog.png";
 import Inventory from "./assets/Inventory.png";
 import Ecommerce from "./assets/Ecommerce.png";
 import Messaging from "./assets/Messaging.png";
-
+import IDPIC from './assets/id-pic.png';
 
 import CV from "./assets/John_Benedict_CV.pdf";
 
@@ -21,7 +21,6 @@ export const API_URL = "https://bugtech.solutions/v1";
 
 //Local
 // export const API_URL = "http://localhost:5500/v1";
-
 export const PROJECTS = [
     {
       id: 1,
@@ -192,7 +191,7 @@ export const PROFILES = [
         username: "jaybeegeli",
         email: "jb@yahoo.com",
         profile: {
-            cover: "https://bugtech-portfolio.s3.ap-northeast-1.amazonaws.com/Untitled.png",
+            cover: IDPIC,
             nickname: "jaybee",
             firstName: "John Benedict",
             lastName: "Geli",
@@ -268,7 +267,7 @@ export const PROFILES = [
                 subtitle: "My Introduction",
                 description: "I believe that my unique combination of accounting knowledge and Full Stack Development skills allows me to bring added value to any project. My goal is to use my expertise to create cutting-edge accounting tools and systems that streamline financial processes and improve the user experience.",
                 link: CV,
-                cover: "https://bugtech-portfolio.s3.ap-northeast-1.amazonaws.com/Untitled.png",
+                cover: IDPIC,
                 contents: [
                     {
                         title: "Experience",
