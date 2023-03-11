@@ -12,7 +12,10 @@ import Blog from "./assets/Blog.png";
 import Inventory from "./assets/Inventory.png";
 import Ecommerce from "./assets/Ecommerce.png";
 import Messaging from "./assets/Messaging.png";
-import IDPIC from './assets/id-pic.png';
+// import IDPIC from './assets/id-pic.png';
+import IDPIC from './assets/John.jpg';
+import IDPIC1 from './assets/JOHN1.jpg';
+
 
 import CV from "./assets/John_Benedict_CV.pdf";
 
@@ -192,11 +195,11 @@ export const PROFILES = [
         email: "jb@yahoo.com",
         profile: {
             cover: IDPIC,
-            nickname: "jaybee",
-            firstName: "John Benedict",
-            lastName: "Geli",
-            position: "Software Engineer",
-            bio: "I'm a creative software developer based in Tacloban City, Philippines, with a passion for creating innovative tools and systems. I have a background in accounting and a solid foundation in Full Stack Development, including expertise in HTML, CSS, JavaScript, React, Node.js and Databases.",
+            nickname: "john",
+            firstName: "Aures John",
+            lastName: "Alvarade",
+            position: "Junior Software Developer",
+            bio: "I'm a creative Jr. Software Developer based in Quackers Hills, Australia, I'm just a tourist in Australia with a passion for creating innovative tools and systems. I have a solid foundation in Full Stack Development, including expertise in HTML, CSS, JavaScript, React, Node.js and Databases.",
         },    
          contents: [
             {
@@ -267,18 +270,18 @@ export const PROFILES = [
                 subtitle: "My Introduction",
                 description: "I believe that my unique combination of accounting knowledge and Full Stack Development skills allows me to bring added value to any project. My goal is to use my expertise to create cutting-edge accounting tools and systems that streamline financial processes and improve the user experience.",
                 link: CV,
-                cover: IDPIC,
+                cover: IDPIC1,
                 contents: [
                     {
                         title: "Experience",
-                        subtitle: "4+ Years Working",
+                        subtitle: "2+ Years Working",
                         description: "",
                         link: "",
                         icon: "bx bx-award",
                       },
                       {
                         title: "Completed",
-                        subtitle: "10+ projects",
+                        subtitle: "5+ projects",
                         description: "",
                         link: "",
                         icon: "bx bx-briefcase-alt",
