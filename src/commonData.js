@@ -34,7 +34,7 @@ export const PROJECTS = [
       cover: CFC,
       title: "CFC 2023",
       description: "App",
-      link: "https://cfc2023.online"
+      link: "https://cfc.bugtech.solutions"
     },
     {
       id: 3,
