@@ -50,13 +50,13 @@ export const PROJECTS = [
       description: "App",
       link: "/netflix"
     },
-    // {
-    //   id: 5,
-    //   cover: Dashboard,
-    //   title: "Admin Panel",
-    //   description: "Design",
-    //   link: "/dashboard"
-    // },
+    {
+      id: 5,
+      cover: Dashboard,
+      title: "Admin Panel",
+      description: "Design",
+      link: "/dashboard"
+    },
     // {
     //   id: 6,
     //   cover: Inventory,
