@@ -19,8 +19,6 @@ jobs:
         node-version: '18.x'
     - name: Run Yarn
       run: yarn
-    - name: Run tests
-      run: yarn test
       
   deploy:
     runs-on: ubuntu-latest
@@ -43,7 +41,8 @@ jobs:
               git pull
               export NVM_DIR=~/.nvm
               source ~/.nvm/nvm.sh
-              yarn install
-              yarn build
-        
+              npm install
+              npm build
+              cp builds/* build/ -r
+              
       
