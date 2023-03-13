@@ -335,6 +335,15 @@ export const PROFILES = [
               contents: []
             },
             {
+              type: "education",
+              title: "Leyte National High School",
+              subtitle: "Diploma - Secondary",
+              description: "2010-2014",
+              link: "",
+              cover: "",
+              contents: []
+            },
+            {
               type: "experience",
               title: "Experience",
               subtitle: "",
