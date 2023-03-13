@@ -345,9 +345,18 @@ export const PROFILES = [
             },
             {
               type: "experience",
-              title: "Experience",
-              subtitle: "",
-              description: "",
+              title: "IT MATTERS",
+              subtitle: "Web Developer",
+              description: "2018-2020",
+              link: "",
+              cover: "",
+              contents: []
+            },
+            {
+              type: "experience",
+              title: "Cloud Panda PH",
+              subtitle: "Software Engineer II",
+              description: "2020-2021",
               link: "",
               cover: "",
               contents: []
