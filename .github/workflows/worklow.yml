@@ -1,0 +1,49 @@
+name: Portfolio CI/CD
+
+on:
+  push:
+   branches:
+      - main
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+    - name: Use Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: '18.x'
+    - name: Run Yarn
+      run: yarn
+    - name: Run tests
+      run: yarn test
+      
+  deploy:
+    runs-on: ubuntu-latest
+    
+    strategy:
+      fail-fast: false
+      matrix: 
+        node-version: [14.x]
+    
+    steps:
+      - name: Deploy to Web Server
+        uses: appleboy/ssh-action@master
+        with:
+          host: bugtech.solutions
+          username: bugtech
+          password: 420230
+          port: 22
+          script: |
+              cd /var/www/Portfolioweb
+              git pull
+              export NVM_DIR=~/.nvm
+              source ~/.nvm/nvm.sh
+              yarn install
+              yarn build
+        
+      
