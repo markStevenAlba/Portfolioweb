@@ -342,25 +342,31 @@ export const PROFILES = [
               link: "",
               cover: "",
               contents: []
-            },
-            {
+            },{
               type: "experience",
-              title: "IT MATTERS",
-              subtitle: "Web Developer",
-              description: "2018-2020",
+              title: "PRULIFE UK Insurance",
+              subtitle: "Full Stack Developer",
+              description: "May 2021 - November 2022",
               link: "",
               cover: "",
               contents: []
-            },
-            {
+            },{
               type: "experience",
               title: "Cloud Panda PH",
               subtitle: "Software Engineer II",
-              description: "2020-2021",
+              description: "March 2020 - February 2021",
               link: "",
               cover: "",
               contents: []
-            }
+            },{
+              type: "experience",
+              title: "IT MATTERS",
+              subtitle: "Web Developer",
+              description: "January 2018 - March 2020",
+              link: "",
+              cover: "",
+              contents: []
+            },
           ]
       }
         ]
