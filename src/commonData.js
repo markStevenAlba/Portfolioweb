@@ -289,7 +289,7 @@ export const PROFILES = [
                         description: "",
                         link: "",
                         icon: "bx bx-book",
-                      },
+                      }
                 ]
             },
             {
