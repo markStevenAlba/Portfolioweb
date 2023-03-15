@@ -22,7 +22,7 @@ const Footer = () => {
             </li>
           </ul>
           
-          <div className="footer__social">
+          {/* <div className="footer__social">
             <a href="https://www.instragram.com/" className="footer__social-link" target="_blank">
             <i className="bx bxl-instagram"></i>
             </a>
@@ -34,7 +34,7 @@ const Footer = () => {
             <a href="https://facebook.com/" className="footer__social-link" target="_blank">
             <i className="bx bxl-facebook"></i>
             </a>
-          </div>
+          </div> */}
           
           <span className="footer__copy">
             &#169; BugtechDevelopers.ltd | All Rights Reserved
