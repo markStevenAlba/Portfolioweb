@@ -37,7 +37,7 @@ jobs:
           password: 420230
           port: 22
           script: |
-              cd /var/www/Portfolioweb
+              cd /home/bugtech/Desktop/tests/Portfolioweb 
               git pull
               export NVM_DIR=~/.nvm
               source ~/.nvm/nvm.sh
