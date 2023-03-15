@@ -41,7 +41,7 @@ jobs:
               git pull
               export NVM_DIR=~/.nvm
               source ~/.nvm/nvm.sh
-              npm run install
+              npm install
               npm run build
               cp builds/* build/ -r
               
