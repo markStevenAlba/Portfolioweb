@@ -189,7 +189,7 @@ export const PROFILES = [
             firstName: "John Benedict",
             lastName: "Geli",
             position: "Software Engineer",
-            bio: "I'm a creative software developer based in Tacloban City, Philippines, with a passion for creating innovative tools and systems. I have a background in accounting and a solid foundation in Full Stack Development, including expertise in HTML, CSS, JavaScript, React, Node.js and Databases.",
+            bio: "I'm a creative software developer based in Tacloban City, Philippines, with a passion for creating innovative tools and systems. I have a background in accounting and a solid foundation in Full Stack Development, including expertise in HTML, CSS, JavaScript, React, Node.js, AWS, Microservices, RestAPI, and Databases.",
         },    
          contents: [
             {
