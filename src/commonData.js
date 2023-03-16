@@ -50,13 +50,13 @@ export const PROJECTS = [
       description: "App",
       link: "/netflix"
     },
-    // {
-    //   id: 6,
-    //   cover: Inventory,
-    //   title: "Inventory Management",
-    //   description: "App",
-    //   link: "https://pos.bugtech.solutions"
-    // },
+    {
+      id: 6,
+      cover: Inventory,
+      title: "Bubu - Lending App",
+      description: "App",
+      link: "https://bubu.bugtech.solutions"
+    },
     // {
     //   id: 7,
     //   cover: Blog,
