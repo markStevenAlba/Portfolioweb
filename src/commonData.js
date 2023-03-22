@@ -351,16 +351,16 @@ export const PROFILES = [
               contents: []
             },{
               type: "experience",
-              title: "PRULIFE UK Insurance",
-              subtitle: "Full Stack Developer",
+              title: "Cloud Panda PH",
+              subtitle: "Software Engineer II",
               description: "May 2021 - November 2022",
               link: "",
               cover: "",
               contents: []
             },{
               type: "experience",
-              title: "Cloud Panda PH",
-              subtitle: "Software Engineer II",
+              title: "PRULIFE UK Insurance",
+              subtitle: "Full Stack Developer",
               description: "March 2020 - February 2021",
               link: "",
               cover: "",
