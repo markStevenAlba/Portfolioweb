@@ -7,6 +7,10 @@ import "swiper/css/pagination";
 
 import { Pagination } from "swiper";
 
+//Components
+import Service from '../Service/Services';
+
+
 const Services = ({data}) => {
    const [toggleState, setToggleState] = useState(0);
    const [values, setValues] = useState({});
@@ -22,17 +26,18 @@ const Services = ({data}) => {
           setValues(data);
     }, [data])
   
-    
   
 
-            let {contents} = values;
     return (
      <section className="services section" id="services">
-      <h2 className="section__title">{values.title}</h2>
+      <Service toggleTab={toggleTab} data={data}/>     
+     <div>
+     
+      {/* <h2 className="section__title">{values.title}</h2>
         <span className="section__subtitle">{values.subtitle}</span>
-      <div className="services__container container grid">
+      <div className="services__container container grid"> */}
 
-      {contents && contents.map((a, index) => {
+      {/* {contents && contents.map((a, index) => {
         return (
       <div className="services__content" key={index}>
       <div >
@@ -40,12 +45,12 @@ const Services = ({data}) => {
         <h3 className="services__title">{a.title}</h3>
       </div>
       
-      {/* <span className="services__button"
+      <span className="services__button"
         onClick={() => toggleTab(1)}
       >View More
         <i className="uil uil-arrow-right services__button-icon">
         </i>
-      </span> */}
+      </span>
       
       <div className={toggleState === 1 ? "services__modal active-modal" : "services__modal"}>
         <div className="services__modal-content">
@@ -98,11 +103,11 @@ const Services = ({data}) => {
         </div>
       </div>
     </div>)
-            }) }
-
-        
-    
+            }) } */}
+     {/* </div> */}
       </div>
+      
+      
   </section>
   );
 };

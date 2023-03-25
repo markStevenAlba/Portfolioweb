@@ -11,7 +11,7 @@ import { Pagination } from "swiper";
 
 import "./contact.css";
 import { useDispatch } from 'react-redux';
-import { isFocusable } from '@testing-library/user-event/dist/utils/index.js';
+import { Slide } from "react-awesome-reveal";
 
 const Contact = ({data}) => {
 
@@ -39,10 +39,15 @@ const Contact = ({data}) => {
 
   return (
     <section className="contact section" id="contact">
+            <Slide direction="down">
       <h2 className="section__title">{data.title}</h2>
-      <span className="section__subtitle">{data.subtitle}</span>
+      {/* <span className="section__subtitle">{data.subtitle}</span> */}
+      <h1 className="section__subtitle"><span className="green">Contact</span> Me</h1>
+      </Slide>
 
       <div className="contact__container container grid">
+      <Slide direction="left">
+
         <div className="contact__content">
           <h3 className="contact__title">Talk To Me</h3>
           <div className="contact__info">
@@ -151,7 +156,9 @@ const Contact = ({data}) => {
             </div>
           </div> */}
         </div>
-        
+        </Slide>
+        <Slide direction="right">
+
         <div className="contact__content">
           <h3 className="contact__title">Hire Me</h3>
           
@@ -219,6 +226,7 @@ const Contact = ({data}) => {
             
           </form>
         </div>
+        </Slide>
       </div>
     </section>
   )

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./qualification.css";
+import { Slide } from "react-awesome-reveal";
 
 const Qualification = ({data}) => {
   const [toggleState, setToggleState] = useState(1);
@@ -36,6 +37,7 @@ const Qualification = ({data}) => {
       <span className="section__subtitle">{values.subtitle}</span>
       <div className="qualification__container container">
         <div className="qualification__tabs">
+        <Slide direction="left">
           <div
             className={
               toggleState === 1
@@ -47,7 +49,8 @@ const Qualification = ({data}) => {
             &nbsp;<i className="uil uil-graduation-cap qualification__icon"></i>{" "}
             &nbsp;Education&nbsp;
           </div>
-
+        </Slide>
+        <Slide direction="right">
           <div
             className={
               toggleState === 2
@@ -60,6 +63,7 @@ const Qualification = ({data}) => {
             <i className="uil uil-briefcase-alt qualification__icon"></i>
             {"  "}&nbsp;Experience&nbsp;
           </div>
+                  </Slide>
         </div>
         <div className="qualification__sections container">
           {/* EDUCATION */}

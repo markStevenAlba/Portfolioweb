@@ -132,6 +132,11 @@ button {
   text-align: center;
 }
 
+
+.mt-1 {
+  margin-top: 1em !important;
+}
+
 /*=========== LAYOUT=======*/
 .container {
   max-width: 968px;
@@ -217,5 +222,8 @@ margin-bottom: var(--mb-3);
     margin-right: var(--mb-1);
   }
 }
+
+
+
 
 

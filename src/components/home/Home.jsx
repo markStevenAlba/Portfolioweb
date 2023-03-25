@@ -4,6 +4,12 @@ import Social from './Social';
 import Data from './Data'
 import ScrollDown from './ScrollDown';
 
+import styled from "styled-components";
+import { AiOutlineInstagram } from "react-icons/ai";
+import { GiEarthAmerica } from "react-icons/gi";
+import { FaLinkedinIn } from "react-icons/fa";
+import { Slide } from "react-awesome-reveal";
+
 const Home = ({profile, socials}) => {
   const [profileSocials, setSocials] = useState([]);
   const [accountProfile, setProfile] = useState({});
@@ -24,22 +30,25 @@ const Home = ({profile, socials}) => {
     <section className="home section" id="home">
       <div className= "home__container container grid">
         
-        <div className= "home__content grid">
+        <div className="home__content grid">
         <div style={{
                 background: `url(${accountProfile.cover})`,
                 }}
-                className= "home__img" 
+                className="home__img" 
                 ></div>
-
+    <Slide direction="right">
              <Social data={profileSocials} />
-             <Data data={accountProfile}/>
+    </Slide>
+    <Data data={accountProfile}/>
+             
         </div>
 
          <ScrollDown />        
       </div>
     </section>
-    
   )
 }
 
 export default Home
+
+

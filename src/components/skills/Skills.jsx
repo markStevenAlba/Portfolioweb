@@ -2,13 +2,12 @@ import React, { useEffect, useState } from "react";
 import "./skills.css";
 import Frontend from "./Frontend";
 import Backend from "./Backend";
+import { Slide } from "react-awesome-reveal";
 
-import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 import "swiper/css/pagination";
 
-import { Pagination } from "swiper";
 
 
 const Skills = ({data = {}}) => {
@@ -44,9 +43,11 @@ const Skills = ({data = {}}) => {
 
   return (
     <section className="skills section" id="skills">
+              <Slide direction="up">
       <h2 className="section__title">{values.title}</h2>
-      <span className="section__subtitle">{values.subtitle}</span>
-      
+      {/* <span className="section__subtitle">{values.subtitle}</span> */}
+      <h1 className="section__subtitle">My <span className="green">Technical level</span> </h1>
+      </Slide>
 
       {/* <Swiper className="skills__container container"
           loop={true}

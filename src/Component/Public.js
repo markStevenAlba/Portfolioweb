@@ -13,6 +13,8 @@ import Work from '../components/work/Work';
 import Footer from '../components/footer/Footer';
 import ScrollUp from '../components/scrollup/ScrollUp';
 
+//Components
+
 import { useDispatch, useSelector } from 'react-redux';
 import { PROFILES } from '../commonData';
 import { getContent } from '../Redux/Actions/dataAction';
@@ -36,8 +38,8 @@ const App = () => {
     if(ret){
       ret = ret.split('/')[1].split('#')[0];
     }
+    
     let localPath = localStorage.getItem('profile');
-
 
     if(ret){
       myPath = ret;
@@ -47,8 +49,6 @@ const App = () => {
         myPath = localPath;
       }
     }
-
-
 
     let profile = PROFILES.find(a => a.username === myPath);
     let socials = profile.contents.find(a => a.type === 'socials');
@@ -62,8 +62,7 @@ const App = () => {
     let qualification = profile.contents.find(a => a.type === 'qualification');
 
     let works = profile.contents.find(a => a.type === 'works');
-    
-    console.log(profile)
+    console.log(services)
     setValues({...values, ...profile, socials, services, skills, about, contact, qualification, works })
     dispatch({type: 'SET_CONTENT', payload: profile});
     
@@ -95,8 +94,10 @@ const App = () => {
     {testimonial && testimonial.contents.length !== 0 &&  <Testimonials data={testimonial? testimonial: {}}/> }
     {contact && contact.contents.length !== 0 &&  <Contact data={contact ? contact : {}} /> }
     </main>
-      <Footer/>
+    
+      <Footer socials={socials}/>
       <ScrollUp />
+      
     </>
   )
 }

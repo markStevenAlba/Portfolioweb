@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
+import styled from 'styled-components';
+import { GiCandleFlame } from "react-icons/gi";
+
 import "./header.css";
 
 const Header = ({data}) => {
@@ -7,11 +10,17 @@ const Header = ({data}) => {
   const { profile } = data;
   /*============ Toggle  Menu======== */
   const [Toggle, showMenu] = useState(false);
+  const [bar, setBar] = useState(false);
   const [activeNav, setActiveNav] = useState("#home");
 
   const handleLogout = () => {
     localStorage.clear();
     window.location.href = "/";
+  }
+  
+  const handleClick = (e) => {
+    setActiveNav(e)
+    showMenu(false)
   }
 
 
@@ -22,18 +31,24 @@ const Header = ({data}) => {
    {isAuth && profile ?  <div  className="nav__logo"
     onClick={() => handleLogout()}
    >
+     <Logo>
+        <span className='green'><GiCandleFlame/></span>
       {String(profile.nickname).toUpperCase()}
+      </Logo>
       </div> : 
        <a href="/" className="nav__logo">
+          <Logo>
+      <span className='green'><GiCandleFlame/></span>
       {String(profile && profile.nickname ? profile.nickname : 'Bugtech').toUpperCase()}
+        </Logo>
        </a>
       }
 
     <div className={Toggle ? "nav__menu show-menu" :
   "nav__menu"}>
-      <ul className="nav__list grid">
+      <ul className="nav__list grid justify-content-center align-items-center">
           <li className= "nav__item">
-          <a href="#home" onClick={() => setActiveNav('#home')} className={activeNav === "#home" ? 
+          <a href="#home" onClick={() => handleClick('#home')} className={activeNav === "#home" ? 
             "nav__link active-link" : "nav__link"}>
           <i className="uil uil-estate nav__icon"></i>
           Home
@@ -43,7 +58,7 @@ const Header = ({data}) => {
         <li className= "nav__item">
           <a 
             href="#about" 
-            onClick={() => setActiveNav("#about")} 
+            onClick={() => handleClick("#about")} 
             className={activeNav === "#about" ? 
             "nav__link active-link" : "nav__link"}
           >
@@ -55,7 +70,7 @@ const Header = ({data}) => {
         <li className= "nav__item">
           <a 
             href="#skills" 
-            onClick={() => setActiveNav("#skills")} 
+            onClick={() => handleClick("#skills")} 
             className={activeNav === "#skills" ? 
             "nav__link active-link" : "nav__link"}
           >
@@ -63,33 +78,32 @@ const Header = ({data}) => {
           Skills
           </a>
         </li>
-{/* 
         <li className= "nav__item">
           <a 
             href="#services" 
-            onClick={() => setActiveNav("#services")} 
+            onClick={() => handleClick("#services")} 
             className={activeNav === "#services" ? 
             "nav__link active-link" : "nav__link"}
           >
           <i className="uil uil-setting nav__icon"></i>
           Services
           </a>
-        </li> */}
+        </li>
         <li className= "nav__item">
           <a 
             href="#qualification" 
-            onClick={() => setActiveNav("#qualification")} 
+            onClick={() => handleClick("#qualification")} 
             className={activeNav === "#qualification" ? 
             "nav__link active-link" : "nav__link"}
           >
-          <i className="uil uil-setting nav__icon"></i>
+          <i className="uil uil-briefcase nav__icon"></i>
           Qualifications
           </a>
         </li>
         <li className= "nav__item">
           <a 
             href="#portfolio" 
-            onClick={() => setActiveNav("#portfolio")} 
+            onClick={() => handleClick("#portfolio")} 
             className={activeNav === "#portfolio" ? 
             "nav__link active-link" : "nav__link"}
           >
@@ -101,7 +115,7 @@ const Header = ({data}) => {
         <li className= "nav__item">
           <a 
             href="#contact" 
-            onClick={() => setActiveNav("#contact")} 
+            onClick={() => handleClick("#contact")} 
             className={activeNav === "#contact" ? 
             "nav__link active-link" : "nav__link"}
           >
@@ -110,8 +124,6 @@ const Header = ({data}) => {
           </a>
         </li>
       </ul>
-      
-
       <i className="uil uil-times nav__close" onClick={() => 
         showMenu(!Toggle)}></i>
     </div>
@@ -124,4 +136,23 @@ const Header = ({data}) => {
   ); 
 };
 
+
+
+
+
 export default Header;
+
+
+const Logo = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    span{
+        font-size: 1.8rem;
+    }
+
+    h1{
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+`
