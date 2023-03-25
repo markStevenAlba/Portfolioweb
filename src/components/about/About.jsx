@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
-import "./about.css";
-import AboutImg from "../../assets/about.jpg";
-import CV from "../../assets/John-Cv.pdf";
 import Info from './Info';
 import { Slide } from "react-awesome-reveal";
+import "./about.css";
 
 
 const About = ({data}) => {

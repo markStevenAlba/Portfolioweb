@@ -47,8 +47,8 @@ const Header = ({data}) => {
 
     <div className={Toggle ? "nav__menu show-menu" :
   "nav__menu"}>
-      <ul className="nav__list grid justify-content-center align-items-center">
-          <li className= "nav__item">
+      <ul className="nav__list">
+          <li className="nav__item">
           <a href="#home" onClick={() => handleClick('#home')} className={activeNav === "#home" ? 
             "nav__link active-link" : "nav__link"}>
           <i className="uil uil-estate nav__icon"></i>

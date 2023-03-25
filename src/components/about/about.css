@@ -116,4 +116,7 @@ padding: 1rem;
  .about__info {
   grid-template-columns: repeat(2, 1fr);
  }
+ .about__info__container {
+  width: 90vw;
+}
 }

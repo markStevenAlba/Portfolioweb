@@ -31,7 +31,7 @@ const Services = ({data}) => {
     return (
      <section className="services section" id="services">
       <Service toggleTab={toggleTab} data={data}/>     
-     <div>
+     {/* <div> */}
      
       {/* <h2 className="section__title">{values.title}</h2>
         <span className="section__subtitle">{values.subtitle}</span>
@@ -105,7 +105,7 @@ const Services = ({data}) => {
     </div>)
             }) } */}
      {/* </div> */}
-      </div>
+      {/* </div> */}
       
       
   </section>

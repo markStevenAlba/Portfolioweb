@@ -1,11 +1,9 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import ProfileForm from '../../Component/Forms/ProfileForm'
 import Textwriter from '../../Component/Text';
 
 
 const Data = ({data = {}}) => {
-  const { isAuth} = useSelector(a => a.auth)
   
   return (
   <div className="home__data">
