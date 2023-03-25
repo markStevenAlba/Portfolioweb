@@ -26,6 +26,7 @@ const Header = ({data}) => {
 
 
   return (
+
  <header className="header">
   <nav className="nav container">
    {isAuth && profile ?  <div  className="nav__logo"

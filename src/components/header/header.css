@@ -1,9 +1,10 @@
 .header {
-  width: 100%;
+  width: 100vw !important;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: var(--z-fixed) !important;
+  right: 0;
+  z-index: 1000000 !important;
   background-color: var(--body-color);
 }
 

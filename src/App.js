@@ -1,13 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
-import './App.css';
 import Public from './Component/Public';
 import { Provider, useSelector } from "react-redux";
 import Login from './Component/Login/Login';
 import PrivateRoute from './Component/PrivateRoute';
-import jwtDecode from 'jwt-decode';
-
 import store from './Redux/store';
+import './App.css';
 
 // import {logout, getUserData} from "./Redux/Actions/authAction";
 

@@ -93,10 +93,10 @@ const App = () => {
     {works && works.contents.length !== 0 &&  <Work data={works ? works : {}}/> }
     {testimonial && testimonial.contents.length !== 0 &&  <Testimonials data={testimonial? testimonial: {}}/> }
     {contact && contact.contents.length !== 0 &&  <Contact data={contact ? contact : {}} /> }
-    </main>
     
       <Footer socials={socials}/>
       <ScrollUp />
+    </main>
       
     </>
   )
