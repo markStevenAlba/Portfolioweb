@@ -55,7 +55,6 @@ const Header = ({data}) => {
           Home
           </a>
         </li>
-
         <li className= "nav__item">
           <a 
             href="#about" 
