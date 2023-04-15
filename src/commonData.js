@@ -112,18 +112,25 @@ export const PROJECTS = [
     },
     {
       id: 6,
-      cover: Inventory,
-      title: "Bubu - Lending App",
+      cover: Work3,
+      title: "File Manager",
       description: "App",
-      link: "https://bubu.bugtech.solutions"
+      link: "https://files.bugtech.solutions"
     },
-    {
-      id: 7,
-      cover: Inventory,
-      title: "Deep - Multi-level Marketing",
-      description: "App",
-      link: "https://deep.bugtech.solutions"
-    },
+    // {
+    //   id: 6,
+    //   cover: Inventory,
+    //   title: "Bubu - Lending App",
+    //   description: "App",
+    //   link: "https://bubu.bugtech.solutions"
+    // },
+    // {
+    //   id: 7,
+    //   cover: Inventory,
+    //   title: "Deep - Multi-level Marketing",
+    //   description: "App",
+    //   link: "https://deep.bugtech.solutions"
+    // },
     // {
     //   id: 7,
     //   cover: Blog,
