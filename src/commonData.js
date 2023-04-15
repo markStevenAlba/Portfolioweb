@@ -114,7 +114,7 @@ export const PROJECTS = [
       id: 6,
       cover: Work3,
       title: "File Manager",
-      description: "App",
+      description: "Web",
       link: "https://files.bugtech.solutions"
     },
     // {
