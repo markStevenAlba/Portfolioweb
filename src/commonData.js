@@ -20,7 +20,7 @@ import IDPIC from './assets/id-pic.png';
 import Image1 from "./assets/testimonial1.png"; 
 import Image2 from "./assets/testimonial2.png";
 import Image3 from "./assets/testimonial3.png";
-import CV from "./assets/John_Benedict_CV.pdf";
+import CV from "./assets/Brix_Delute_Updated1.pdf";
 
 //Dev
 export const API_URL = "https://bugtech.solutions/v1";
@@ -259,9 +259,9 @@ export const PROFILES = [
         email: "jb@yahoo.com",
         profile: {
             cover: IDPIC,
-            nickname: "jaybee",
-            firstName: "John Benedict",
-            lastName: "Geli",
+            nickname: "brix",
+            firstName: "Brix",
+            lastName: "Delute",
             position: [
               "Software Engineer",
               "Backend Developer",
@@ -295,7 +295,7 @@ export const PROFILES = [
                           title: "",
                           subtitle: "",
                           description: "",
-                          link: "https://www.facebook.com/jaybeepido/",
+                          link: "",
                           icon: "uil uil-facebook",
                         }
                 ]
@@ -307,31 +307,31 @@ export const PROFILES = [
                 contents: [
                     {
                       title: "Email",
-                      subtitle: "jaybee.aicpa@gmail.com",
+                      subtitle: "brix.delute.official20@gmail.com",
                       description: "",
-                      link: "mailto:jaybee.aicpa@gmail.com",
+                      link: "mailto:brix.delute.official20@gmail.com",
                       icon: "bx bx-mail-send",
                     },
                     {
                         title: "Whatsapp",
-                        subtitle: "+639774461641",
+                        subtitle: "+639948726036",
                         description: "",
                         link: "www.linkedin.com/in/john-benedict-geli-16941a21a",
                         icon: "bx bxl-whatsapp",
                       },{
                         title: "Skype",
-                        subtitle: "jaybee.aicpa@outlook.com",
+                        subtitle: "brix.delute.official20@gmail.com",
                         description: "",
                         link: "https://join.skype.com/invite/ywfxqv9NGiPP",
                         icon: "bx bxl-skype",
                       },
-                      {
-                          title: "Messenger",
-                          subtitle: "jaybeegeli",
-                          description: "",
-                          link: "https://www.facebook.com/jaybeepido/",
-                          icon: "bx bxl-messenger",
-                        }
+                      // {
+                      //     title: "Messenger",
+                      //     subtitle: "jaybeegeli",
+                      //     description: "",
+                      //     link: "https://www.facebook.com/jaybeepido/",
+                      //     icon: "bx bxl-messenger",
+                      //   }
                 ]
             },
             {
@@ -408,8 +408,8 @@ export const PROFILES = [
             {
               type: "education",
               title: "ASIAN DEVELOPMENT FOUNDATION COLLEGE",
-              subtitle: "Accountancy Graduate - Tertiary",
-              description: "2015-2020",
+              subtitle: "BACHELOR OF SCIENCE IN HOTEL & RESTAURANT MANAGEMENT",
+              description: "2016-2020",
               link: "",
               cover: "",
               contents: []
@@ -424,17 +424,9 @@ export const PROFILES = [
               contents: []
             },{
               type: "experience",
-              title: "Cloud Panda PH",
-              subtitle: "Software Engineer II",
-              description: "May 2021 - November 2022",
-              link: "",
-              cover: "",
-              contents: []
-            },{
-              type: "experience",
               title: "PRULIFE UK Insurance",
               subtitle: "Full Stack Developer",
-              description: "March 2020 - February 2021",
+              description: "March 2021 - February 2022",
               link: "",
               cover: "",
               contents: []
@@ -452,6 +444,7 @@ export const PROFILES = [
     ]
   }
 ]
+
 
 
 
