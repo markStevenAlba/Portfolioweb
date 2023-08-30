@@ -258,7 +258,7 @@ export const PROFILES = [
         username: "jaybeegeli",
         email: "jb@yahoo.com",
         profile: {
-            cover: IDPIC,
+            // cover: IDPIC,
             nickname: "brix",
             firstName: "Brix",
             lastName: "Delute",
