@@ -20,7 +20,7 @@ import IDPIC from './assets/id-pic.png';
 import Image1 from "./assets/testimonial1.png"; 
 import Image2 from "./assets/testimonial2.png";
 import Image3 from "./assets/testimonial3.png";
-import CV from "./assets/Brix_Delute_Updated1.pdf";
+import CV from "./assets/BrixDeluteUpdatedCV.pdf";
 
 //Dev
 export const API_URL = "https://bugtech.solutions/v1";
