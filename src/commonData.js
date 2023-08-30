@@ -288,7 +288,7 @@ export const PROFILES = [
                         title: "",
                         subtitle: "",
                         description: "",
-                        link: "https://www.linkedin.com/in/john-benedict-geli",
+                        link: "https://www.linkedin.com/in/brix-delute-1a1944288/",
                         icon: "uil uil-linkedin",
                       },
                       {
@@ -316,7 +316,7 @@ export const PROFILES = [
                         title: "Whatsapp",
                         subtitle: "+639948726036",
                         description: "",
-                        link: "www.linkedin.com/in/john-benedict-geli-16941a21a",
+                        link: "",
                         icon: "bx bxl-whatsapp",
                       },{
                         title: "Skype",
