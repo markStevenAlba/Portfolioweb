@@ -340,7 +340,7 @@ export const PROFILES = [
                 subtitle: "My Introduction",
                 description: "I believe that my unique combination of accounting knowledge and Full Stack Development skills allows me to bring added value to any project. My goal is to use my expertise to create cutting-edge accounting tools and systems that streamline financial processes and improve the user experience.",
                 link: CV,
-                cover: IDPIC,
+                // cover: IDPIC,
                 contents: [
                     {
                         title: "Experience",
