@@ -426,7 +426,7 @@ export const PROFILES = [
               type: "experience",
               title: "PRULIFE UK Insurance",
               subtitle: "Full Stack Developer",
-              description: "March 2021 - February 2022",
+              description: "March 2020 - February 2022",
               link: "",
               cover: "",
               contents: []
@@ -434,7 +434,7 @@ export const PROFILES = [
               type: "experience",
               title: "IT MATTERS",
               subtitle: "Web Developer",
-              description: "January 2018 - March 2020",
+              description: "April 2017 - January 2020",
               link: "",
               cover: "",
               contents: []
