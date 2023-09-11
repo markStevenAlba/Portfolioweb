@@ -281,14 +281,14 @@ export const PROFILES = [
                       title: "",
                       subtitle: "",
                       description: "",
-                      link: "https://github.com/jGeli",
+                      link: "https://github.com/brixprojects",
                       icon: "uil uil-github-alt",
                     },
                     {
                         title: "",
                         subtitle: "",
                         description: "",
-                        link: "https://www.linkedin.com/in/brix-delute-1a1944288/",
+                        link: "https://www.linkedin.com/in/brix-delute",
                         icon: "uil uil-linkedin",
                       },
                       {
