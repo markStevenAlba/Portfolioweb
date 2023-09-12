@@ -281,7 +281,7 @@ export const PROFILES = [
                       title: "",
                       subtitle: "",
                       description: "",
-                      link: "https://github.com/brixprojects",
+                      link: "https://github.com/bugtech-systems",
                       icon: "uil uil-github-alt",
                     },
                     {
