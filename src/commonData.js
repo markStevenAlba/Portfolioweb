@@ -16,11 +16,11 @@ import Blog from "./assets/Blog.png";
 import Inventory from "./assets/Inventory.png";
 import Ecommerce from "./assets/Ecommerce.png";
 import Messaging from "./assets/Messaging.png";
-import IDPIC from './assets/id-pic.png';
+import IDPIC from './assets/profilepic.jpg';
 import Image1 from "./assets/testimonial1.png"; 
 import Image2 from "./assets/testimonial2.png";
 import Image3 from "./assets/testimonial3.png";
-import CV from "./assets/BrixDeluteUpdatedCV.pdf";
+import CV from "./assets/BrixDeluteCV.pdf";
 
 //Dev
 export const API_URL = "https://bugtech.solutions/v1";
@@ -258,7 +258,7 @@ export const PROFILES = [
         username: "jaybeegeli",
         email: "jb@yahoo.com",
         profile: {
-            // cover: IDPIC,
+            cover: IDPIC,
             nickname: "brix",
             firstName: "Brix",
             lastName: "Delute",
@@ -295,7 +295,7 @@ export const PROFILES = [
                           title: "",
                           subtitle: "",
                           description: "",
-                          link: "",
+                          link: "https://www.facebook.com/brixxdelute/",
                           icon: "uil uil-facebook",
                         }
                 ]
@@ -344,7 +344,7 @@ export const PROFILES = [
                 contents: [
                     {
                         title: "Experience",
-                        subtitle: "4+ Years Working",
+                        subtitle: "5+ Years Working",
                         description: "",
                         link: "",
                         icon: "bx bx-award",
@@ -364,9 +364,9 @@ export const PROFILES = [
                         icon: "bx bx-support",
                       },
                       {
-                        title: "Accounting",
-                        subtitle: "Book keeper",
-                        description: "",
+                        title: "Freelancing",
+                        subtitle: "Web Development Projects",
+                        description: "Collaborations with multiple private companies",
                         link: "",
                         icon: "bx bx-book",
                       }
@@ -426,7 +426,7 @@ export const PROFILES = [
               type: "experience",
               title: "PRULIFE UK Insurance",
               subtitle: "Full Stack Developer",
-              description: "March 2020 - February 2022",
+              description: "March 2021 - February 2023",
               link: "",
               cover: "",
               contents: []
@@ -434,7 +434,7 @@ export const PROFILES = [
               type: "experience",
               title: "IT MATTERS",
               subtitle: "Web Developer",
-              description: "April 2017 - January 2020",
+              description: "April 2018 - January 2021",
               link: "",
               cover: "",
               contents: []
