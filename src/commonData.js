@@ -4,23 +4,23 @@ import { FiCodesandbox } from "react-icons/fi";
 import { CgWebsite } from "react-icons/cg";
 import Work2 from "./assets/work2.jpg";
 import Work3 from "./assets/work3.jpg";
-import Work4 from "./assets/work4.jpg";
-import Work5 from "./assets/work5.jpg";
+// import Work4 from "./assets/work4.jpg";
+// import Work5 from "./assets/work5.jpg";
 
 import Doovote from "./assets/doovote.png";
 import Netflix from "./assets/netflix.png";
-import Dashboard from "./assets/Dashboard.png";
+// import Dashboard from "./assets/Dashboard.png";
 import Pos from "./assets/Pos.png";
 import CFC from "./assets/CFC.png";
-import Blog from "./assets/Blog.png";
-import Inventory from "./assets/Inventory.png";
-import Ecommerce from "./assets/Ecommerce.png";
-import Messaging from "./assets/Messaging.png";
-import IDPIC from './assets/profilepic.jpg';
+// import Blog from "./assets/Blog.png";
+// import Inventory from "./assets/Inventory.png";
+// import Ecommerce from "./assets/Ecommerce.png";
+// import Messaging from "./assets/Messaging.png";
+// import IDPIC from './assets/one_piece_logo1.jpg';
 import Image1 from "./assets/testimonial1.png"; 
 import Image2 from "./assets/testimonial2.png";
 import Image3 from "./assets/testimonial3.png";
-import CV from "./assets/BrixDeluteCV.pdf";
+import CV from "./assets/MarkStevenAlbaCV.pdf";
 
 //Dev
 export const API_URL = "https://bugtech.solutions/v1";
@@ -258,18 +258,18 @@ export const PROFILES = [
         username: "jaybeegeli",
         email: "jb@yahoo.com",
         profile: {
-            cover: IDPIC,
-            nickname: "brix",
-            firstName: "Brix",
-            lastName: "Delute",
+            // cover: IDPIC,
+            nickname: "Mark Steven",
+            firstName: "Mark Steven",
+            lastName: "Alba",
             position: [
               "Software Engineer",
               "Backend Developer",
               "Front End Developer",
-              "Full Stack Developer",
+              "Senior Full Stack Developer",
               "React Js Developer"
             ],
-            bio: "I'm a creative software developer based in Tacloban City, Philippines, with a passion for creating innovative tools and systems. I have a background in accounting and a solid foundation in Full Stack Development, including expertise in HTML, CSS, JavaScript, React, Node.js, AWS, Microservices, RestAPI, and Databases.",
+            bio: "I'm a seasoned developer with 4+ years of experience in front-end and back-end development across diverse industries like Insurance and IT Services. I've led teams in creating user-friendly applications from scratch to deployment, with expertise in JavaScript, HTML, CSS, ReactJS, NodeJS, RestAPI, Microservices, MongoDB, and MySQL. I excel in web design, coding, and agile project management.",
         },    
          contents: [
             {
@@ -288,16 +288,16 @@ export const PROFILES = [
                         title: "",
                         subtitle: "",
                         description: "",
-                        link: "https://www.linkedin.com/in/brix-delute",
+                        link: "https://www.linkedin.com/in/mark-steven-alba-9b55a9274/",
                         icon: "uil uil-linkedin",
-                      },
-                      {
-                          title: "",
-                          subtitle: "",
-                          description: "",
-                          link: "https://www.facebook.com/brixxdelute/",
-                          icon: "uil uil-facebook",
-                        }
+                      }
+                    //   {
+                    //       title: "",
+                    //       subtitle: "",
+                    //       description: "",
+                    //       link: "https://www.facebook.com/AlbyYourCryingShoulder",
+                    //       icon: "uil uil-facebook",
+                    //     }
                 ]
             },
             {
@@ -307,44 +307,45 @@ export const PROFILES = [
                 contents: [
                     {
                       title: "Email",
-                      subtitle: "brix.delute.official20@gmail.com",
+                      subtitle: "marksteven.alba0@gmail.com",
                       description: "",
-                      link: "mailto:brix.delute.official20@gmail.com",
-                      icon: "bx bx-mail-send",
+                      link: "marksteven.alba@gmail.com",
+                      icon: "bx bxl-gmail",
                     },
                     {
-                        title: "Whatsapp",
-                        subtitle: "+639948726036",
+                        title: "Telegram",
+                        subtitle: "@markSteven96",
                         description: "",
                         link: "",
-                        icon: "bx bxl-whatsapp",
-                      },{
-                        title: "Skype",
-                        subtitle: "brix.delute.official20@gmail.com",
-                        description: "",
-                        link: "https://join.skype.com/invite/ywfxqv9NGiPP",
-                        icon: "bx bxl-skype",
+                        icon: "bx bxl-telegram",
                       },
                       // {
-                      //     title: "Messenger",
-                      //     subtitle: "jaybeegeli",
-                      //     description: "",
-                      //     link: "https://www.facebook.com/jaybeepido/",
-                      //     icon: "bx bxl-messenger",
-                      //   }
+                      //   title: "Skype",
+                      //   subtitle: "Mark Steven.Alba.official20@gmail.com",
+                      //   description: "",
+                      //   link: "https://join.skype.com/invite/ywfxqv9NGiPP",
+                      //   icon: "bx bxl-skype",
+                      // },
+                      {
+                          title: "Messenger",
+                          subtitle: "marksteven.alba",
+                          description: "",
+                          link: "https://www.facebook.com/jaybeepido/",
+                          icon: "bx bxl-messenger",
+                        }
                 ]
             },
             {
                 type: "about",
                 title: "About Me",
                 subtitle: "My Introduction",
-                description: "I believe that my unique combination of accounting knowledge and Full Stack Development skills allows me to bring added value to any project. My goal is to use my expertise to create cutting-edge accounting tools and systems that streamline financial processes and improve the user experience.",
+                description: "I'm a Full Stack Developer. I create and optimize apps, automate support tasks, analyze errors for improvements, and collaborate with developers. I also contribute to project documentation.",
                 link: CV,
                 // cover: IDPIC,
                 contents: [
                     {
                         title: "Experience",
-                        subtitle: "5+ Years Working",
+                        subtitle: "4+ Years Working",
                         description: "",
                         link: "",
                         icon: "bx bx-award",
@@ -408,7 +409,7 @@ export const PROFILES = [
             {
               type: "education",
               title: "ASIAN DEVELOPMENT FOUNDATION COLLEGE",
-              subtitle: "BACHELOR OF SCIENCE IN HOTEL & RESTAURANT MANAGEMENT",
+              subtitle: "BACHELOR OF SCIENCE IN BUSINESS ADMINISTRATION",
               description: "2016-2020",
               link: "",
               cover: "",
@@ -424,9 +425,9 @@ export const PROFILES = [
               contents: []
             },{
               type: "experience",
-              title: "PRULIFE UK Insurance",
-              subtitle: "Full Stack Developer",
-              description: "March 2021 - February 2023",
+              title: "HIGHLY SUCCEED INC",
+              subtitle: "Senior Full Stack Developer",
+              description: "May 2022 - April 2023",
               link: "",
               cover: "",
               contents: []
